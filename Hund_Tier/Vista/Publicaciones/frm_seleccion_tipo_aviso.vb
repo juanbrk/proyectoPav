@@ -35,17 +35,31 @@
     Private Sub btn_perdido_perro_Click(sender As Object, e As EventArgs) Handles btn_perdido_perro.Click
         'Abrimos la ventana frm_publicarAviso con los datos cargados para publicar una perdida de perro
         nuevaPublicacion(frm_publicar_aviso.TipoAnimal.perro, frm_publicar_aviso.AccionUsuario.perdido)
+        Me.Close()
     End Sub
 
     Private Sub btn_perdido_gato_Click(sender As Object, e As EventArgs) Handles btn_perdido_gato.Click
         'Abrimos la ventana frm_publicarAviso con los datos cargados para publicar una perdida de gato
         nuevaPublicacion(frm_publicar_aviso.TipoAnimal.gato, frm_publicar_aviso.AccionUsuario.perdido)
+        Me.Close()
     End Sub
 
+    Private Sub btn_encontrado_perro_Click(sender As Object, e As EventArgs) Handles btn_encontrado_perro.Click
+        'Abrimos la ventana frm_publicarAviso con los datos cargados para publicar un perro encontrado
+        nuevaPublicacion(frm_publicar_aviso.TipoAnimal.perro, frm_publicar_aviso.AccionUsuario.encontrado)
+        Me.Close()
+    End Sub
+
+    Private Sub btn_encontrado_gato_Click(sender As Object, e As EventArgs) Handles btn_encontrado_gato.Click
+        'Abrimos la ventana frm_publicarAviso con los datos cargados para publicar un gato encontrado
+        nuevaPublicacion(frm_publicar_aviso.TipoAnimal.gato, frm_publicar_aviso.AccionUsuario.encontrado)
+        Me.Close()
+    End Sub
+
+    'Sub que sirve para reusar el codigo en las distintas opciones, ya sea para adopcion, encontrados o perdidos, se abre la misma
+    'ventana pero lo que se realiza es distinto segun el tipo de animal y el tipo de publicacion.
     Private Sub nuevaPublicacion(tipoAnimal As frm_publicar_aviso.TipoAnimal, tipoPublicacion As frm_publicar_aviso.AccionUsuario)
-        Dim datosPublicacion_form As New frm_publicar_aviso
-        ' Le seteamos el tipo de animal con el que trabajaremos
-        datosPublicacion_form.setTipoAnimal(tipoAnimal)
+
 
         ' Chequeamos para ver como se mostrara la ventana de publicarAviso, puede mostrarse
         'para publicar un nuevo aviso o para hacer busqueda de animales que cumplan con ciertos
@@ -53,6 +67,9 @@
         'este atributo se setea cuando se hace click desde frm_main en publicar aviso
 
         If elUsuarioVaA = mostrarSiguienteFormPara.publicarAviso Then
+            Dim datosPublicacion_form As New frm_publicar_aviso
+            ' Le seteamos el tipo de animal con el que trabajaremos
+            datosPublicacion_form.setTipoAnimal(tipoAnimal)
             ' Le cambiamos el titulo a la form por el que sea apropiado para cada caso
             Dim strTituloTipoPublicacion = ""
             ' Segun el tipo de publicacion que hayamos entrado como parametro le cambiamos el titulo a la form siguiente
@@ -74,6 +91,8 @@
             'Si el usuario busca un animal, se hacen otras cosas.
         Else
             Dim buscarAnimalForm As New frm_listarPublicaciones
+            buscarAnimalForm.setTipoAnimal(tipoAnimal)
+            buscarAnimalForm.setTipoPublicacion(tipoPublicacion)
             buscarAnimalForm.ShowDialog()
         End If
     End Sub

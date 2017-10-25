@@ -2,7 +2,7 @@
     Dim usuario As Usuario
     'Booleano que permite saber si las fechas ingresadas son validas.
     Dim flagFechas = False
-    Enum TipoAnimal As Integer
+    Friend Enum TipoAnimal As Integer
         perro = 1
         gato = 2
     End Enum
@@ -166,7 +166,7 @@
 
             'Si el usuario esta haciendo una publicacion se crea una publiacion y se la carga con
             'los datos del animal, usuario y la publicacion.
-            If accion_usuario = AccionUsuario.adopcion Or accion_usuario = AccionUsuario.perdido Then
+            If accion_usuario = AccionUsuario.adopcion Or accion_usuario = AccionUsuario.perdido Or accion_usuario = AccionUsuario.encontrado Then
 
                 'Chequeamos todo lo pertinente al animal de la publicacion.
 

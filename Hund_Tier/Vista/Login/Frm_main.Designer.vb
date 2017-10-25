@@ -29,7 +29,7 @@ Partial Class Frm_main
         Me.lbl_nombre_usuario = New System.Windows.Forms.Label()
         Me.lbl_img_user = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbl_agregar_publicacion = New System.Windows.Forms.Button()
+        Me.btn_nuevaPublicacion = New System.Windows.Forms.Button()
         Me.btn_verPublicaciones = New System.Windows.Forms.Button()
         Me.btn_busqueda = New System.Windows.Forms.Button()
         Me.mnu_frm_main.SuspendLayout()
@@ -94,14 +94,14 @@ Partial Class Frm_main
         Me.Label1.Text = "Usuario:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lbl_agregar_publicacion
+        'btn_nuevaPublicacion
         '
-        Me.lbl_agregar_publicacion.Location = New System.Drawing.Point(13, 121)
-        Me.lbl_agregar_publicacion.Name = "lbl_agregar_publicacion"
-        Me.lbl_agregar_publicacion.Size = New System.Drawing.Size(99, 23)
-        Me.lbl_agregar_publicacion.TabIndex = 4
-        Me.lbl_agregar_publicacion.Text = "Publicar aviso"
-        Me.lbl_agregar_publicacion.UseVisualStyleBackColor = True
+        Me.btn_nuevaPublicacion.Location = New System.Drawing.Point(13, 121)
+        Me.btn_nuevaPublicacion.Name = "btn_nuevaPublicacion"
+        Me.btn_nuevaPublicacion.Size = New System.Drawing.Size(99, 23)
+        Me.btn_nuevaPublicacion.TabIndex = 4
+        Me.btn_nuevaPublicacion.Text = "Publicar aviso"
+        Me.btn_nuevaPublicacion.UseVisualStyleBackColor = True
         '
         'btn_verPublicaciones
         '
@@ -129,7 +129,7 @@ Partial Class Frm_main
         Me.ClientSize = New System.Drawing.Size(345, 151)
         Me.Controls.Add(Me.btn_busqueda)
         Me.Controls.Add(Me.btn_verPublicaciones)
-        Me.Controls.Add(Me.lbl_agregar_publicacion)
+        Me.Controls.Add(Me.btn_nuevaPublicacion)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_img_user)
         Me.Controls.Add(Me.lbl_nombre_usuario)
@@ -149,7 +149,7 @@ Partial Class Frm_main
     Friend WithEvents lbl_nombre_usuario As Label
     Friend WithEvents lbl_img_user As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents lbl_agregar_publicacion As Button
+    Friend WithEvents btn_nuevaPublicacion As Button
     Friend WithEvents btn_verPublicaciones As Button
     Friend WithEvents btn_busqueda As Button
     Friend WithEvents CerrarSesionToolStripMenuItem As ToolStripMenuItem

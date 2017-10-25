@@ -1,11 +1,10 @@
 ﻿Public Class frm_listarPublicaciones
-    Enum TipoAnimal As Integer
-        perro = 1
-        gato = 2
-    End Enum
 
     'VAriable tipo animal por defecto
-    Dim tipo_animal As Integer = TipoAnimal.perro
+    Dim tipo_animal As Integer = frm_publicar_aviso.TipoAnimal.perro
+
+    'Variable para el tipo de publicacion por defecto
+    Dim tipo_publicacion As Integer = frm_publicar_aviso.AccionUsuario.adopcion
 
     'Instancia de PublicacionService para usar en los distintos metodos
     Dim publiServicio As New PublicacionService
@@ -67,73 +66,75 @@
 
             If txt_nombre_animal.Text <> "" Then
                 'Si el txt tiene un texto no vacìo entonces enviamos como filtro el nombre del animal a consultar
-                filters.Add(txt_nombre_animal.Text)
+                filters.Add(txt_nombre_animal.Text) ' param1
             Else
                 filters.Add(Nothing)
             End If 'Fin if de nombreANimal.text
 
             'Agregamos el tipo del animal que se busca
-            filters.Add(tipo_animal)
+            filters.Add(tipo_animal) '  param2
+
+            filters.Add(tipo_publicacion) 'param3
 
             If Not cmb_raza.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro la raza  a consultar
-                filters.Add(cmb_raza.SelectedValue)
+                filters.Add(cmb_raza.SelectedValue) 'param3
             Else
                 filters.Add(Nothing)
             End If ' If de cmbRaza.selectedVAlue
 
             If Not cmb_color1.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del color a consultar
-                filters.Add(cmb_color1.SelectedValue)
+                filters.Add(cmb_color1.SelectedValue) 'param4
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_color2.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del color a consultar
-                filters.Add(cmb_color2.SelectedValue)
+                filters.Add(cmb_color2.SelectedValue) 'param5
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_edad.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id de la edad a consultar
-                filters.Add(cmb_edad.SelectedValue)
+                filters.Add(cmb_edad.SelectedValue) 'param6
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_sexo.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del sexo a consultar
-                filters.Add(cmb_sexo.SelectedValue)
+                filters.Add(cmb_sexo.SelectedValue) 'param7
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_tamano.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del tamaño a consultar
-                filters.Add(cmb_tamano.SelectedValue)
+                filters.Add(cmb_tamano.SelectedValue) 'param8
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_pelo.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del pelo a consultar
-                filters.Add(cmb_pelo.SelectedValue)
+                filters.Add(cmb_pelo.SelectedValue) 'param9
             Else
                 filters.Add(Nothing)
             End If
 
             If Not cmb_barrio.SelectedItem Is Nothing Then
                 'Si el cbo tiene un valor distinto de nulo entonces enviamos como filtro el id del barrio a consultar
-                filters.Add(cmb_barrio.SelectedValue)
+                filters.Add(cmb_barrio.SelectedValue) 'param10
             Else
                 filters.Add(Nothing)
             End If
 
 
             ' Agregamos el nombre de la ciudad
-            filters.Add(txt_ciudad.Text)
+            filters.Add(txt_ciudad.Text) 'param11
 
 
             ' TODO arreglar el tema de las fechas. Tengo formato dd/mm/yy y no me lo permite
@@ -199,23 +200,22 @@
         'Reutilizamos la tabla, pero ahora le cargamos las razas
 
         'Si el tipo de animal es un perro, cargamos los combos con lo que le corresponde a perros. 
-        If tipo_animal = TipoAnimal.perro Then
+        If tipo_animal = frm_publicar_aviso.TipoAnimal.perro Then
             TablaDatos = cmbServicio.getRazasPerros
             cmbServicio.llenarCombo(cmb_raza, TablaDatos, "nombre_raza", "cod_raza")
-            'Reutilizamos la tabla para cargar los combos color1 y color2
-            TablaDatos = cmbServicio.getColores
-            cmbServicio.llenarCombo(cmb_color1, TablaDatos, "nombre", "id_color")
-            'Volvemos a cargar con los colores
-            TablaDatos = cmbServicio.getColores
-            cmbServicio.llenarCombo(cmb_color2, TablaDatos, "nombre", "id_color")
-
             'Si el animal es un gato llenamos los combos con lo relativo a gatos. 
         Else
-
+            TablaDatos = cmbServicio.getRazasGatos
+            cmbServicio.llenarCombo(cmb_raza, TablaDatos, "nombre_raza", "cod_raza")
         End If
 
         'Carga de combos que son iguales tanto para perros como para gatos, de aca para abajo. 
-
+        'Reutilizamos la tabla para cargar los combos color1 y color2
+        TablaDatos = cmbServicio.getColores
+        cmbServicio.llenarCombo(cmb_color1, TablaDatos, "nombre", "id_color")
+        'Volvemos a cargar con los colores
+        TablaDatos = cmbServicio.getColores
+        cmbServicio.llenarCombo(cmb_color2, TablaDatos, "nombre", "id_color")
 
         'Cargamos combo sexos
         TablaDatos = cmbServicio.getSexos
@@ -229,6 +229,15 @@
         'Cargamos el combo pelo
         TablaDatos = cmbServicio.getPelosAnimal
         cmbServicio.llenarCombo(cmb_pelo, TablaDatos, "nombre_pelo", "codigo_pelo")
+    End Sub
+
+    'Funcion para setear el tipo de animal que manejara esta ventana puede ser gato o perro
+    Public Sub setTipoAnimal(valor As Integer)
+        tipo_animal = valor
+    End Sub
+
+    Public Sub setTipoPublicacion(valor As Integer)
+        tipo_publicacion = valor
     End Sub
 
     Private Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click
@@ -249,5 +258,10 @@
         rb_si.Checked = False
         rbtn_no.Checked = False
         rbtn_NoSabe.Checked = False
+    End Sub
+
+    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        Me.Close()
+
     End Sub
 End Class

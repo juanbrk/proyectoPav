@@ -201,103 +201,112 @@ Public Class PublicacionDAO
         'Agregamos el tipo de animal como filtro
         If yaPasoParametro Then
             sql_str += andString & " "
-            sql_str += " A.cod_tipo_animal = @param2"
+            sql_str += " A.cod_tipo_animal = @param2" 'params(1)
         Else
             sql_str += " A.cod_tipo_animal = @param2"
             yaPasoParametro = True
         End If
+        'Agregamos el filtro codigo de publicacion
+        If yaPasoParametro Then
+            sql_str += andString & " "
+            sql_str += " P.tipo_publicacion = @param3" 'params(2)
+        Else
+            sql_str += " P.tipo_publicacion = @param3"
+            yaPasoParametro = True
+        End If
+
         'Validamos filtro raza
-        If Not IsNothing(params(2)) Then
+        If Not IsNothing(params(3)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.cod_raza = @param3 "
+                sql_str += " A.cod_raza = @param4 "
             Else
-                sql_str += " A.cod_raza = @param3 "
+                sql_str += " A.cod_raza = @param4 "
                 yaPasoParametro = True
             End If
         End If
         'Validamos filtro color1
-        If Not IsNothing(params(3)) Then
+        If Not IsNothing(params(4)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.color1 = @param4 "
+                sql_str += " A.color1 = @param5 "
             Else
-                sql_str += " A.color1 = @param4 "
+                sql_str += " A.color1 = @param5 "
                 yaPasoParametro = True
             End If
 
         End If
         'Validamos filtro color2
-        If Not IsNothing(params(4)) Then
+        If Not IsNothing(params(5)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.color2 = @param5 "
+                sql_str += " A.color2 = @param6 "
             Else
-                sql_str += " A.color2 = @param5 "
+                sql_str += " A.color2 = @param6 "
                 yaPasoParametro = True
             End If
 
         End If
         'Validamos filtro edad
-        If Not IsNothing(params(5)) Then
+        If Not IsNothing(params(6)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.cod_edad = @param6 "
+                sql_str += " A.cod_edad = @param7 "
             Else
-                sql_str += " A.cod_edad = @param6 "
+                sql_str += " A.cod_edad = @param7 "
                 yaPasoParametro = True
             End If
 
         End If
         'Validamos filtro sexo
-        If Not IsNothing(params(6)) Then
+        If Not IsNothing(params(7)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.cod_sexo = @param7 "
+                sql_str += " A.cod_sexo = @param8 "
             Else
-                sql_str += " A.cod_sexo = @param7 "
+                sql_str += " A.cod_sexo = @param8 "
                 yaPasoParametro = True
             End If
 
         End If
         'Validamos filtro tamaño
-        If Not IsNothing(params(7)) Then
+        If Not IsNothing(params(8)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " A.cod_tamano = @param8 "
+                sql_str += " A.cod_tamano = @param9 "
             Else
-                sql_str += " A.cod_tamano = @param8 "
+                sql_str += " A.cod_tamano = @param9 "
                 yaPasoParametro = True
             End If
 
         End If
         'Validamos filtro pelo
-        If Not IsNothing(params(8)) Then
+        If Not IsNothing(params(9)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += "  A.cod_pelo = @param9 "
+                sql_str += "  A.cod_pelo = @param10 "
             Else
-                sql_str += "  A.cod_pelo = @param9  "
+                sql_str += "  A.cod_pelo = @param10 "
                 yaPasoParametro = True
             End If
         End If
         'Validamos filtro barrio
-        If Not IsNothing(params(9)) Then
+        If Not IsNothing(params(10)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += "  P.barrio = @param10 "
+                sql_str += "  P.barrio = @param11 "
             Else
-                sql_str += "  P.barrio = @param10  "
+                sql_str += "  P.barrio = @param11  "
                 yaPasoParametro = True
             End If
         End If
         'Validamos el filtro ciudad
-        If Not IsNothing(params(10)) Then
+        If Not IsNothing(params(11)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += " P.ciudad = @param11 "
+                sql_str += " P.ciudad = @param12 "
             Else
-                sql_str += "  P.ciudad = @param11  "
+                sql_str += "  P.ciudad = @param12  "
                 yaPasoParametro = True
             End If
         End If
@@ -312,12 +321,12 @@ Public Class PublicacionDAO
         '    End If
         'End If
         'Validamos filtro de estado castrado
-        If Not IsNothing(params(11)) Then
+        If Not IsNothing(params(12)) Then
             If yaPasoParametro Then
                 sql_str += andString & " "
-                sql_str += "A.cod_castrado=@param12 "
+                sql_str += "A.cod_castrado=@param13 "
             Else
-                sql_str += "  A.cod_castrado=@param12  "
+                sql_str += "  A.cod_castrado=@param13  "
                 yaPasoParametro = True
             End If
         End If

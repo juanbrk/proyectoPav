@@ -142,6 +142,7 @@ Partial Class frm_login
         Me.Controls.Add(Me.lbl_password)
         Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.lbl_username_1)
+        Me.MaximizeBox = False
         Me.Name = "frm_login"
         Me.Text = "Iniciar sesión"
         Me.ResumeLayout(False)

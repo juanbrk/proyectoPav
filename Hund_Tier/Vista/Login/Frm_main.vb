@@ -138,7 +138,7 @@
         bandera_modificado = True
     End Sub
 
-    Private Sub lbl_agregar_publicacion_Click(sender As Object, e As EventArgs) Handles lbl_agregar_publicacion.Click
+    Private Sub lbl_agregar_publicacion_Click(sender As Object, e As EventArgs) Handles btn_nuevaPublicacion.Click
         mostrarFormSeleccionTipoAvisoPara(SeleccionUsuario.publicarAviso)
     End Sub
 

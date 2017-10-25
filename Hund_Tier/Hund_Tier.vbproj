@@ -247,6 +247,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\logo.bmp" />
+    <None Include="Resources\paw.png" />
     <Content Include="Resources\user_log.png" />
     <None Include="Resources\user_log1.png" />
   </ItemGroup>
