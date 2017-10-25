@@ -17,10 +17,10 @@ Public Class frm_nuevoReporte
             Dim fechaDesde As DateTime = DateTime.ParseExact(mtxt_fechaDesde.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture)
             Dim reformatedDesde As String = fechaDesde.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
             Dim fechaHasta As DateTime = DateTime.ParseExact(mtxt_FechaHasta.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture)
-            Dim reformattedHasta As String = fechaDesde.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
-            rpt_animales.LocalReport.DataSources.Add(New ReportDataSource("DataSet1", oUsuariosService.generarReporteAltaUsuario(reformatedDesde, reformattedHasta)))
-            rpt_animales.LocalReport.SetParameters({New ReportParameter("pFechaDesde", mtxt_fechaDesde.Text), New ReportParameter("pHasta", reformattedHasta)})
+            Dim reformattedHasta As String = fechaHasta.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
+            rpt_animales.LocalReport.SetParameters({New ReportParameter("pFechaDesde", mtxt_fechaDesde.Text), New ReportParameter("pFechaHasta", mtxt_FechaHasta.Text)})
             rpt_animales.LocalReport.DataSources.Clear()
+            rpt_animales.LocalReport.DataSources.Add(New ReportDataSource("TablaUsuariosAlta", oUsuariosService.generarReporteAltaUsuario(reformatedDesde, reformattedHasta)))
             rpt_animales.RefreshReport()
         Else
             MsgBox("Periodo incorrecto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
