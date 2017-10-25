@@ -107,7 +107,7 @@
 
         'validamos los campos obligatorios  segun el tipo de publicacion 
 
-        If accion_usuario = AccionUsuario.adopcion Then
+        If accion_usuario = AccionUsuario.adopcion Or accion_usuario = AccionUsuario.perdido Then
             'campos obligatorios
             If txt_nombre_animal.Text = String.Empty Then
                 txt_nombre_animal.BackColor = Color.Red
@@ -152,7 +152,7 @@
                     Return False
                 End If
             End If
-        End If
+        End If ' If de accion_usuario
 
 
         Return True
@@ -166,7 +166,7 @@
 
             'Si el usuario esta haciendo una publicacion se crea una publiacion y se la carga con
             'los datos del animal, usuario y la publicacion.
-            If accion_usuario = AccionUsuario.adopcion Then
+            If accion_usuario = AccionUsuario.adopcion Or accion_usuario = AccionUsuario.perdido Then
 
                 'Chequeamos todo lo pertinente al animal de la publicacion.
 
@@ -249,8 +249,8 @@
                             Me.Close()
                         End If
                     End If
-
-
+                Else
+                    Me.Close()
                 End If
 
                 'Si el usuario esta realizando una busqueda accion_usuario = TipoUsuario.busqueda

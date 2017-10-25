@@ -125,8 +125,6 @@ Public Class BDHelper
                 cmdAnimal.Parameters.Add("@colorCollar", SqlDbType.Int).Value = unaPublicacion.animal.idColorCollar
             End If
             cmdAnimal.ExecuteNonQuery()
-            MsgBox("INSERT DE ANIMAL")
-
             'EN EL CONSTRUCTOR DEL COMMAND LE PASAMOS LA TRANSACCION 
 
             Dim str_sql_publicacion = "Insert into Publicacion(cod_publicacion, tipo_animal, id_animal, tipo_publicacion, fecha_publicacion, barrio, descripcion, usuario_responsable"
