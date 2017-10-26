@@ -53,7 +53,7 @@ Public Class BDHelper
     'el animal de la publicacion en la tabla Animal y luego la publicacion en la tabla Publicacion.
     'Durante el tiempo que esta en ejecucion la transaccion, no se puede acceder a la BD ni cambiarle valores
     'esto garantiza que la BD quede en un estado coherente. 
-    Public Function ejecutarSQLTransaction(unaPublicacion As Publicacion) As Integer
+    Public Function ejecutarSQLTransactionPublicacion(unaPublicacion As Publicacion) As Integer
         Dim cnnx As New SqlConnection
         'Comando para agregar la publicacion
         Dim cmdPublicacion As New SqlCommand
@@ -160,6 +160,54 @@ Public Class BDHelper
         Catch ex As Exception
             miTransaccion.Rollback()
             MessageBox.Show("Ocurrio un error al intentar publicar su aviso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            valorDevolucion = 0
+        Finally
+            cnnx.Close()
+            cnnx.Dispose()
+        End Try
+        Return valorDevolucion
+    End Function
+    Public Function ejecutarSQLTransactionBusqueda(unaBusqueda As Busqueda) As Integer
+        Dim cnnx As New SqlConnection
+        'Comando para agregar la publicacion
+        Dim cmdBusqueda As New SqlCommand
+        Dim miTransaccion As SqlTransaction
+
+        Dim valorDevolucion As Integer = 1
+        cnnx.ConnectionString = string_conexion
+
+        cnnx.Open()
+        miTransaccion = cnnx.BeginTransaction
+
+        Try
+            'Variable que me sirve para saber si se busco un animal por raza
+            Dim tieneRaza = (unaBusqueda.razaAnimal <> 0)
+
+            Dim str_sql = "INSERT INTO Busquedas(id_Busqueda, fecha , tipo_animal, tipo_publicacion"
+            If tieneRaza Then
+                str_sql += ", raza"
+            End If
+            str_sql += ") VALUES(@idBusqueda, @fecha, @tipoAnimal, @tipoPublicacion "
+            If tieneRaza Then
+                str_sql += ",@raza"
+            End If
+            str_sql += ")"
+
+            cmdBusqueda = New SqlCommand(str_sql, cnnx, miTransaccion)
+            cmdBusqueda.Connection = cnnx
+            cmdBusqueda.Parameters.Add("@idBusqueda", SqlDbType.Int).Value = unaBusqueda.idBusqueda
+            cmdBusqueda.Parameters.Add("@fecha", SqlDbType.DateTime).Value = New DateTime(Date.Today.Year, Date.Today.Month, Date.Today.Day)
+            cmdBusqueda.Parameters.Add("@tipoAnimal", SqlDbType.Int).Value = unaBusqueda.tipoAnimal
+            cmdBusqueda.Parameters.Add("@tipoPublicacion", SqlDbType.Int).Value = unaBusqueda.tipoPublicacion
+            If tieneRaza Then
+                cmdBusqueda.Parameters.Add("@raza", SqlDbType.Int).Value = unaBusqueda.razaAnimal
+            End If
+            cmdBusqueda.ExecuteNonQuery()
+            miTransaccion.Commit()
+
+        Catch ex As Exception
+            miTransaccion.Rollback()
+            MessageBox.Show("Ocurrio un error al intentar subir la busqueda", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             valorDevolucion = 0
         Finally
             cnnx.Close()

@@ -183,6 +183,18 @@
                 MessageBox.Show("No se encontraron coincidencias para el/los filtros ingresados",
                "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
+
+            ''TODO agregar nueva busqueda a la BD 
+            Dim unaBusqueda As New Busqueda
+            unaBusqueda.idBusqueda = publiServicio.generarIdBusqueda()
+            unaBusqueda.tipoAnimal = tipo_animal
+            unaBusqueda.tipoPublicacion = tipo_publicacion
+            If cmb_raza.SelectedValue IsNot Nothing Then
+                unaBusqueda.razaAnimal = cmb_raza.SelectedValue
+            End If
+            If publiServicio.agregarBusqueda(unaBusqueda) <> 1 Then
+                MessageBox.Show("Error", "Insertar Busqueda", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         End If
 
     End Sub

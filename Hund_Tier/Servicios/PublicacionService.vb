@@ -1,4 +1,6 @@
-﻿Public Class PublicacionService
+﻿Imports Hund_Tier
+
+Public Class PublicacionService
     Dim publiDao As New PublicacionDAO
     Public Sub New()
         publiDao = New PublicacionDAO()
@@ -25,6 +27,11 @@
         Return publiDao.publicarAdopcionConTransaccion(unaPubli)
     End Function
 
+    Friend Function generarIdBusqueda() As Integer
+        Return BDHelper.getDBHelper.generarId("Busquedas")
+    End Function
 
-
+    Friend Function agregarBusqueda(unaBusqueda As Busqueda) As Integer
+        Return publiDao.cargarnuevaBusqueda(unaBusqueda)
+    End Function
 End Class

@@ -84,6 +84,7 @@
     <Compile Include="BaseDatos\Helper\BDHelper.vb" />
     <Compile Include="Modelo\Barrio.vb" />
     <Compile Include="Modelo\Animal.vb" />
+    <Compile Include="Modelo\Busqueda.vb" />
     <Compile Include="Modelo\Publicacion.vb" />
     <Compile Include="Modelo\Usuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

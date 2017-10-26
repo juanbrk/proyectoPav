@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports Hund_Tier
 
 Public Class PublicacionDAO
     Private Property str_sql = ""
@@ -60,6 +61,21 @@ Public Class PublicacionDAO
         End Try
     End Function
 
+    Friend Function cargarnuevaBusqueda(unaBusqueda As Busqueda) As Integer
+        'Variable que almacena el valor que se retornara. se actualiza en cada try catch. 
+        Dim valorRetorno As Integer = 1
+
+        If BDHelper.getDBHelper.ejecutarSQLTransactionBusqueda(unaBusqueda) <> 1 Then
+            valorRetorno = 0
+        End If
+
+        Return valorRetorno
+    End Function
+
+    Friend Function generarIdBusqueda() As Integer
+        Throw New NotImplementedException()
+    End Function
+
     'Funcion para cargar la publicacion mediante transaccion
     Friend Function publicarAdopcionConTransaccion(unaPublicacion As Publicacion) As Integer
 
@@ -69,7 +85,7 @@ Public Class PublicacionDAO
         unaPublicacion.codigoPublicacion = BDHelper.getDBHelper.generarId("Publicacion")
         unaPublicacion.estadoPublicacion = 1
 
-        If BDHelper.getDBHelper.ejecutarSQLTransaction(unaPublicacion) <> 1 Then
+        If BDHelper.getDBHelper.ejecutarSQLTransactionPublicacion(unaPublicacion) <> 1 Then
             valorRetorno = 0
         End If
 
