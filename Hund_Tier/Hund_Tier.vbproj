@@ -156,6 +156,45 @@
     <Compile Include="Vista\Reportes\Data\DS1.vb">
       <DependentUpon>DS1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Reportes\Data\DSRazaGato.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRazaGato.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSRazaPerro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRazaPerro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSRazaPerro.vb">
+      <DependentUpon>DSRazaPerro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSTipoAnimal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSTipoAnimal.vb">
+      <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.Designer.vb">
+      <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteRazaGato.Designer.vb">
+      <DependentUpon>frm_ReporteRazaGato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteRazaGato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteTipoAnimal.Designer.vb">
+      <DependentUpon>frm_ReporteTipoAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteTipoAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vista\Reportes\frm_nuevoReporte.Designer.vb">
       <DependentUpon>frm_nuevoReporte.vb</DependentUpon>
     </Compile>
@@ -209,9 +248,21 @@
     <EmbeddedResource Include="Vista\Login\Frm_main.resx">
       <DependentUpon>Frm_main.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.resx">
+      <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\Desgin\ReporteUsuariosAlta.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_RazaGato.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_TipoAnimal.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_RazaPerro.rdlc" />
     <EmbeddedResource Include="Vista\Reportes\frm_nuevoReporte.resx">
       <DependentUpon>frm_nuevoReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteRazaGato.resx">
+      <DependentUpon>frm_ReporteRazaGato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteTipoAnimal.resx">
+      <DependentUpon>frm_ReporteTipoAnimal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Usuario\frm_modificar_contrasena.resx">
       <DependentUpon>frm_modificar_contrasena.vb</DependentUpon>
@@ -244,6 +295,39 @@
     </None>
     <None Include="Vista\Reportes\Data\DS1.xss">
       <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaGato.xsc">
+      <DependentUpon>DSRazaGato.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaGato.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRazaGato.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaGato.xss">
+      <DependentUpon>DSRazaGato.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaPerro.xsc">
+      <DependentUpon>DSRazaPerro.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaPerro.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRazaPerro.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSRazaPerro.xss">
+      <DependentUpon>DSRazaPerro.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoAnimal.xsc">
+      <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoAnimal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTipoAnimal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoAnimal.xss">
+      <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup />
