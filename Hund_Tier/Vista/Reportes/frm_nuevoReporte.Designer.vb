@@ -23,7 +23,7 @@ Partial Class frm_nuevoReporte
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.ReporteUsuariosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DS1 = New Hund_Tier.DS1()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -35,6 +35,7 @@ Partial Class frm_nuevoReporte
         Me.cmb_reportesPosibles = New System.Windows.Forms.ComboBox()
         Me.lbl_seleccionCombo = New System.Windows.Forms.Label()
         Me.rpt_animales = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.ReporteUsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DS1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -139,20 +140,30 @@ Partial Class frm_nuevoReporte
         '
         'rpt_animales
         '
-        ReportDataSource1.Name = "TablaUsuariosAlta"
-        ReportDataSource1.Value = Me.ReporteUsuariosBindingSource
-        Me.rpt_animales.LocalReport.DataSources.Add(ReportDataSource1)
+        ReportDataSource2.Name = "TablaUsuariosAlta"
+        ReportDataSource2.Value = Me.ReporteUsuariosBindingSource
+        Me.rpt_animales.LocalReport.DataSources.Add(ReportDataSource2)
         Me.rpt_animales.LocalReport.ReportEmbeddedResource = "Hund_Tier.ReporteUsuariosAlta.rdlc"
         Me.rpt_animales.Location = New System.Drawing.Point(18, 156)
         Me.rpt_animales.Name = "rpt_animales"
         Me.rpt_animales.Size = New System.Drawing.Size(381, 116)
         Me.rpt_animales.TabIndex = 1
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(427, 205)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frm_nuevoReporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(535, 355)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.rpt_animales)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -177,4 +188,5 @@ Partial Class frm_nuevoReporte
     Friend WithEvents ReporteUsuariosBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DS1 As Hund_Tier.DS1
     Private WithEvents rpt_animales As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
