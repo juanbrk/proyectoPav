@@ -52,3 +52,7 @@ C:\Users\Melissa Stoll\Documents\UTN\PAV\pro2\Hund_Tier\bin\Debug\Hund_Tier.exe.
 C:\Users\Melissa Stoll\Documents\UTN\PAV\pro2\Hund_Tier\obj\Debug\Hund_Tier.exe
 C:\Users\Melissa Stoll\Documents\UTN\PAV\pro2\Hund_Tier\obj\Debug\Hund_Tier.xml
 C:\Users\Melissa Stoll\Documents\UTN\PAV\pro2\Hund_Tier\obj\Debug\Hund_Tier.pdb
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\bin\Debug\Hund_Tier.exe.config
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.exe
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.xml
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.pdb
