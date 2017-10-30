@@ -177,10 +177,10 @@
     <Compile Include="Vista\Reportes\Data\DSTipoAnimal.vb">
       <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.Designer.vb">
+    <Compile Include="Vista\Reportes\frm_ReporteRazaPerro.Designer.vb">
       <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.vb">
+    <Compile Include="Vista\Reportes\frm_ReporteRazaPerro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Reportes\frm_ReporteRazaGato.Designer.vb">
@@ -254,7 +254,7 @@
     <EmbeddedResource Include="Vista\Login\Frm_main.resx">
       <DependentUpon>Frm_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Reportes\Desgin\frm_ReporteRazaPerro.resx">
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteRazaPerro.resx">
       <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\Desgin\ReporteUsuariosAlta.rdlc" />
