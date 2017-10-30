@@ -201,6 +201,12 @@
     <Compile Include="Vista\Reportes\frm_nuevoReporte.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Vista\Reportes\frm_seleccionTipoReporte.Designer.vb">
+      <DependentUpon>frm_seleccionTipoReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_seleccionTipoReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vista\Usuario\frm_modificar_contrasena.Designer.vb">
       <DependentUpon>frm_modificar_contrasena.vb</DependentUpon>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\frm_ReporteTipoAnimal.resx">
       <DependentUpon>frm_ReporteTipoAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\frm_seleccionTipoReporte.resx">
+      <DependentUpon>frm_seleccionTipoReporte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Usuario\frm_modificar_contrasena.resx">
       <DependentUpon>frm_modificar_contrasena.vb</DependentUpon>

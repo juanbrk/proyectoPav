@@ -12,11 +12,11 @@
   <xs:element name="DSRazaPerro" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSRazaPerro" msprop:Generator_UserDSName="DSRazaPerro">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DTRazaGato" msprop:Generator_TableClassName="DTRazaGatoDataTable" msprop:Generator_TableVarName="tableDTRazaGato" msprop:Generator_TablePropName="DTRazaGato" msprop:Generator_RowDeletingName="DTRazaGatoRowDeleting" msprop:Generator_RowChangingName="DTRazaGatoRowChanging" msprop:Generator_RowEvHandlerName="DTRazaGatoRowChangeEventHandler" msprop:Generator_RowDeletedName="DTRazaGatoRowDeleted" msprop:Generator_UserTableName="DTRazaGato" msprop:Generator_RowChangedName="DTRazaGatoRowChanged" msprop:Generator_RowEvArgName="DTRazaGatoRowChangeEvent" msprop:Generator_RowClassName="DTRazaGatoRow">
+        <xs:element name="DTBusquedasRaza" msprop:Generator_TableClassName="DTBusquedasRazaDataTable" msprop:Generator_TableVarName="tableDTBusquedasRaza" msprop:Generator_RowChangedName="DTBusquedasRazaRowChanged" msprop:Generator_TablePropName="DTBusquedasRaza" msprop:Generator_RowDeletingName="DTBusquedasRazaRowDeleting" msprop:Generator_RowChangingName="DTBusquedasRazaRowChanging" msprop:Generator_RowEvHandlerName="DTBusquedasRazaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTBusquedasRazaRowDeleted" msprop:Generator_RowClassName="DTBusquedasRazaRow" msprop:Generator_UserTableName="DTBusquedasRaza" msprop:Generator_RowEvArgName="DTBusquedasRazaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="RazaPerro" msprop:Generator_ColumnVarNameInTable="columnRazaPerro" msprop:Generator_ColumnPropNameInRow="RazaPerro" msprop:Generator_ColumnPropNameInTable="RazaPerroColumn" msprop:Generator_UserColumnName="RazaPerro" type="xs:string" minOccurs="0" />
-              <xs:element name="CantidadRazaPerro" msprop:Generator_ColumnVarNameInTable="columnCantidadRazaPerro" msprop:Generator_ColumnPropNameInRow="CantidadRazaPerro" msprop:Generator_ColumnPropNameInTable="CantidadRazaPerroColumn" msprop:Generator_UserColumnName="CantidadRazaPerro" type="xs:string" minOccurs="0" />
+              <xs:element name="raza" msprop:Generator_ColumnVarNameInTable="columnraza" msprop:Generator_ColumnPropNameInRow="raza" msprop:Generator_ColumnPropNameInTable="razaColumn" msprop:Generator_UserColumnName="raza" type="xs:string" minOccurs="0" />
+              <xs:element name="busquedas" msprop:Generator_ColumnVarNameInTable="columnbusquedas" msprop:Generator_ColumnPropNameInRow="busquedas" msprop:Generator_ColumnPropNameInTable="busquedasColumn" msprop:Generator_UserColumnName="busquedas" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
