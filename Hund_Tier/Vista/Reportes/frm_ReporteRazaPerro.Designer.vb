@@ -28,11 +28,18 @@ Partial Class frm_ReporteRazaPerro
         Me.DSRazaGato = New Hund_Tier.DSRazaGato()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.DSRazaPerro = New Hund_Tier.DSRazaPerro()
+<<<<<<< HEAD
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.mtxt_fechaDesde = New System.Windows.Forms.MaskedTextBox()
         Me.mtxt_fechaHasta = New System.Windows.Forms.MaskedTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+=======
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.mtxt_FechaHasta = New System.Windows.Forms.MaskedTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.mtxt_fechaDesde = New System.Windows.Forms.MaskedTextBox()
+>>>>>>> 868bd1dab9d57e90228fde7f5e7b0edc9da88f46
         Me.btn_generarReporte = New System.Windows.Forms.Button()
         CType(Me.DTRazaGatoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DSRazaGato, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,10 +62,16 @@ Partial Class frm_ReporteRazaPerro
         ReportDataSource1.Value = Me.DTRazaGatoBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_RazaPerro.rdlc"
+<<<<<<< HEAD
         Me.ReportViewer1.Location = New System.Drawing.Point(16, 15)
         Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(789, 427)
+=======
+        Me.ReportViewer1.Location = New System.Drawing.Point(12, 52)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(592, 307)
+>>>>>>> 868bd1dab9d57e90228fde7f5e7b0edc9da88f46
         Me.ReportViewer1.TabIndex = 0
         '
         'DSRazaPerro
@@ -66,6 +79,7 @@ Partial Class frm_ReporteRazaPerro
         Me.DSRazaPerro.DataSetName = "DSRazaPerro"
         Me.DSRazaPerro.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+<<<<<<< HEAD
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -117,6 +131,55 @@ Partial Class frm_ReporteRazaPerro
         Me.btn_generarReporte.Name = "btn_generarReporte"
         Me.btn_generarReporte.Size = New System.Drawing.Size(75, 23)
         Me.btn_generarReporte.TabIndex = 6
+=======
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(178, 25)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 13)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Fecha Hasta:"
+        '
+        'mtxt_FechaHasta
+        '
+        Me.mtxt_FechaHasta.Location = New System.Drawing.Point(253, 22)
+        Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2)
+        Me.mtxt_FechaHasta.Mask = "00/00/0000"
+        Me.mtxt_FechaHasta.Name = "mtxt_FechaHasta"
+        Me.mtxt_FechaHasta.Size = New System.Drawing.Size(76, 20)
+        Me.mtxt_FechaHasta.TabIndex = 10
+        Me.mtxt_FechaHasta.ValidatingType = GetType(Date)
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Fecha desde:"
+        '
+        'mtxt_fechaDesde
+        '
+        Me.mtxt_fechaDesde.Location = New System.Drawing.Point(92, 22)
+        Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2)
+        Me.mtxt_fechaDesde.Mask = "00/00/0000"
+        Me.mtxt_fechaDesde.Name = "mtxt_fechaDesde"
+        Me.mtxt_fechaDesde.Size = New System.Drawing.Size(76, 20)
+        Me.mtxt_fechaDesde.TabIndex = 8
+        Me.mtxt_fechaDesde.ValidatingType = GetType(Date)
+        '
+        'btn_generarReporte
+        '
+        Me.btn_generarReporte.Location = New System.Drawing.Point(490, 23)
+        Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_generarReporte.Name = "btn_generarReporte"
+        Me.btn_generarReporte.Size = New System.Drawing.Size(80, 19)
+        Me.btn_generarReporte.TabIndex = 7
+>>>>>>> 868bd1dab9d57e90228fde7f5e7b0edc9da88f46
         Me.btn_generarReporte.Text = "Generar"
         Me.btn_generarReporte.UseVisualStyleBackColor = True
         '
@@ -124,6 +187,7 @@ Partial Class frm_ReporteRazaPerro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(821, 505)
         Me.Controls.Add(Me.btn_generarReporte)
         Me.Controls.Add(Me.mtxt_fechaHasta)
@@ -131,6 +195,14 @@ Partial Class frm_ReporteRazaPerro
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+=======
+        Me.ClientSize = New System.Drawing.Size(616, 371)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.mtxt_FechaHasta)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.mtxt_fechaDesde)
+        Me.Controls.Add(Me.btn_generarReporte)
+>>>>>>> 868bd1dab9d57e90228fde7f5e7b0edc9da88f46
         Me.Controls.Add(Me.ReportViewer1)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frm_ReporteRazaPerro"
@@ -145,6 +217,7 @@ Partial Class frm_ReporteRazaPerro
     Friend WithEvents DTRazaGatoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DSRazaGato As Hund_Tier.DSRazaGato
     Friend WithEvents DSRazaPerro As Hund_Tier.DSRazaPerro
+<<<<<<< HEAD
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents mtxt_fechaDesde As MaskedTextBox
@@ -152,4 +225,11 @@ Partial Class frm_ReporteRazaPerro
     Friend WithEvents Label3 As Label
     Friend WithEvents btn_generarReporte As Button
     Private WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+=======
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents mtxt_FechaHasta As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents mtxt_fechaDesde As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents btn_generarReporte As System.Windows.Forms.Button
+>>>>>>> 868bd1dab9d57e90228fde7f5e7b0edc9da88f46
 End Class
