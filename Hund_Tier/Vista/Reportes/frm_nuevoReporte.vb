@@ -2,7 +2,7 @@
 Imports Microsoft.Reporting.WinForms
 
 Public Class frm_nuevoReporte
-    Private Sub mtxt_fechaDesde_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles mtxt_fechaDesde.MaskInputRejected
+    Private Sub mtxt_fechaDesde_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs)
 
     End Sub
 
@@ -11,7 +11,7 @@ Public Class frm_nuevoReporte
         Me.rpt_animales.RefreshReport()
     End Sub
 
-    Private Sub btn_generarReporte_Click(sender As Object, e As EventArgs) Handles btn_generarReporte.Click
+    Private Sub btn_generarReporte_Click(sender As Object, e As EventArgs)
         Dim oUsuariosService As New UsuariosService
         If IsDate(mtxt_fechaDesde.Text) And IsDate((mtxt_FechaHasta.Text)) Then
             Dim fechaDesde As DateTime = DateTime.ParseExact(mtxt_fechaDesde.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture)
