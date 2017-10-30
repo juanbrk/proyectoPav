@@ -26,4 +26,8 @@ Public Class frm_nuevoReporte
             MsgBox("Periodo incorrecto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
         End If
     End Sub
+
+    Private Sub btn_generarReporte_Click_1(sender As Object, e As EventArgs) Handles btn_generarReporte.Click
+
+    End Sub
 End Class
