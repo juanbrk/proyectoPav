@@ -23,9 +23,9 @@ Partial Class frm_seleccionTipoReporte
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btn_altaUsuarios = New System.Windows.Forms.Button()
-        Me.tbn_reporteTipoAnimal = New System.Windows.Forms.Button()
         Me.btn_reporteTipoPublicacion = New System.Windows.Forms.Button()
+        Me.tbn_reporteTipoAnimal = New System.Windows.Forms.Button()
+        Me.btn_altaUsuarios = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,14 +41,14 @@ Partial Class frm_seleccionTipoReporte
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Reportes entre fechas"
         '
-        'btn_altaUsuarios
+        'btn_reporteTipoPublicacion
         '
-        Me.btn_altaUsuarios.Location = New System.Drawing.Point(34, 19)
-        Me.btn_altaUsuarios.Name = "btn_altaUsuarios"
-        Me.btn_altaUsuarios.Size = New System.Drawing.Size(191, 23)
-        Me.btn_altaUsuarios.TabIndex = 0
-        Me.btn_altaUsuarios.Text = "Nuevos usuarios de la aplicacion"
-        Me.btn_altaUsuarios.UseVisualStyleBackColor = True
+        Me.btn_reporteTipoPublicacion.Location = New System.Drawing.Point(35, 76)
+        Me.btn_reporteTipoPublicacion.Name = "btn_reporteTipoPublicacion"
+        Me.btn_reporteTipoPublicacion.Size = New System.Drawing.Size(191, 23)
+        Me.btn_reporteTipoPublicacion.TabIndex = 2
+        Me.btn_reporteTipoPublicacion.Text = "Busquedas por tipo de publicacion"
+        Me.btn_reporteTipoPublicacion.UseVisualStyleBackColor = True
         '
         'tbn_reporteTipoAnimal
         '
@@ -59,14 +59,14 @@ Partial Class frm_seleccionTipoReporte
         Me.tbn_reporteTipoAnimal.Text = "Busquedas por tipo de animal"
         Me.tbn_reporteTipoAnimal.UseVisualStyleBackColor = True
         '
-        'btn_reporteTipoPublicacion
+        'btn_altaUsuarios
         '
-        Me.btn_reporteTipoPublicacion.Location = New System.Drawing.Point(35, 76)
-        Me.btn_reporteTipoPublicacion.Name = "btn_reporteTipoPublicacion"
-        Me.btn_reporteTipoPublicacion.Size = New System.Drawing.Size(191, 23)
-        Me.btn_reporteTipoPublicacion.TabIndex = 2
-        Me.btn_reporteTipoPublicacion.Text = "Busquedas por tipo de publicacion"
-        Me.btn_reporteTipoPublicacion.UseVisualStyleBackColor = True
+        Me.btn_altaUsuarios.Location = New System.Drawing.Point(34, 19)
+        Me.btn_altaUsuarios.Name = "btn_altaUsuarios"
+        Me.btn_altaUsuarios.Size = New System.Drawing.Size(191, 23)
+        Me.btn_altaUsuarios.TabIndex = 0
+        Me.btn_altaUsuarios.Text = "Nuevos usuarios de la aplicacion"
+        Me.btn_altaUsuarios.UseVisualStyleBackColor = True
         '
         'frm_seleccionTipoReporte
         '

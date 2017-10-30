@@ -155,7 +155,7 @@
         Return valorDevuelto
     End Function
 
-    Public Function getReportePendientesAltaUsuario(ByVal fechaDesde As String, ByVal fechaHasta As String) As DataTable
+    Public Function getReporteAltasUsuarios(ByVal fechaDesde As String, ByVal fechaHasta As String) As DataTable
         Dim sql As String = "SELECT Cast( U.fecha_alta as VARCHAR) As 'fechaAlta' , U.username AS 'nombreUsuario', U.nombre, U.apellido, U.email AS 'mail' From usuarios U " &
         " WHERE U.fecha_alta>='" + fechaDesde + "' AND U.fecha_alta<='" + fechaHasta + "'"
         Return BDHelper.getDBHelper.ConsultaSQL(sql)

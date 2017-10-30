@@ -61,6 +61,14 @@ Public Class PublicacionDAO
         End Try
     End Function
 
+    Friend Function getReportesTipoAnimal(reformatedDesde As String, reformatedHasta As Object) As Object
+        Dim sql As String = "SELECT  T.nombre_tipo AS 'TipoAninmal', COUNT(tipo_animal) AS 'CantidadAnimal' FROM Publicacion P JOIN Tipo_Animal T ON P.tipo_animal = T.codigo_animal " &
+            "WHERE  P.fecha_publicacion>= '" + reformatedDesde + "' AND P.fecha_publicacion<='" + reformatedHasta + "'" &
+            "GROUP BY T.nombre_tipo " &
+            "ORDER BY 'CantidadAnimal' DESC"
+        Return BDHelper.getDBHelper.ConsultaSQL(sql)
+    End Function
+
     Friend Function cargarnuevaBusqueda(unaBusqueda As Busqueda) As Integer
         'Variable que almacena el valor que se retornara. se actualiza en cada try catch. 
         Dim valorRetorno As Integer = 1

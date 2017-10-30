@@ -34,4 +34,8 @@ Public Class PublicacionService
     Friend Function agregarBusqueda(unaBusqueda As Busqueda) As Integer
         Return publiDao.cargarnuevaBusqueda(unaBusqueda)
     End Function
+
+    Friend Function generarReporteTipoAnimal(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.getReportesTipoAnimal(reformatedDesde, reformattedHasta)
+    End Function
 End Class

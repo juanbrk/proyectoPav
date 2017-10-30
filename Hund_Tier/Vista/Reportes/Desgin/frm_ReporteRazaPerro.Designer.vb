@@ -113,11 +113,11 @@ Partial Class frm_ReporteRazaPerro
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RVRazaPerro As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents DSRazaPerro As Hund_Tier.DSRazaPerro
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents mtxt_FechaHasta As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents mtxt_fechaDesde As System.Windows.Forms.MaskedTextBox
     Friend WithEvents btn_generarReporte As System.Windows.Forms.Button
+    Private WithEvents RVRazaPerro As Microsoft.Reporting.WinForms.ReportViewer
 End Class

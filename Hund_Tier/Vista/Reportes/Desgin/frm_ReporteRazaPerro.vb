@@ -4,4 +4,8 @@
 
         Me.RVRazaPerro.RefreshReport()
     End Sub
+
+    Private Sub btn_generarReporte_Click(sender As Object, e As EventArgs) Handles btn_generarReporte.Click
+
+    End Sub
 End Class

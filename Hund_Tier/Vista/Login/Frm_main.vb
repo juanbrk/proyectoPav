@@ -167,8 +167,9 @@
     Private Sub lbl_verPublicaciones_Click(sender As Object, e As EventArgs) Handles btn_verPublicaciones.Click
         'Si el usuario es admin, entonces al hacer click en el boton se va a mostrar el form para generar reporte
         If esAdministrador() Then
-            Dim frm_reporte As New frm_nuevoReporte
-            frm_reporte.ShowDialog()
+            Dim formSeleccionarTipoReporte As New frm_seleccionTipoReporte
+            formSeleccionarTipoReporte.ShowDialog()
+
             Me.Hide()
             bandera_escondida = True
 
