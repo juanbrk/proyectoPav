@@ -104,14 +104,14 @@ Partial Class frm_ReporteTipoPublicacion
         Me.RVTipoPublicacion.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_TipoPublicacion.rdlc"
         Me.RVTipoPublicacion.Location = New System.Drawing.Point(12, 42)
         Me.RVTipoPublicacion.Name = "RVTipoPublicacion"
-        Me.RVTipoPublicacion.Size = New System.Drawing.Size(601, 297)
+        Me.RVTipoPublicacion.Size = New System.Drawing.Size(633, 297)
         Me.RVTipoPublicacion.TabIndex = 17
         '
         'frm_ReporteTipoPublicacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(625, 351)
+        Me.ClientSize = New System.Drawing.Size(657, 351)
         Me.Controls.Add(Me.RVTipoPublicacion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)

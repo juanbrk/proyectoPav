@@ -164,8 +164,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>TablaRazaPerro</DataSetName>
-        <Top>0.49431cm</Top>
-        <Left>0.48132cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>0.32407cm</Left>
         <Height>1.2cm</Height>
         <Width>7.76225cm</Width>
         <Style>
@@ -438,10 +438,10 @@
           </Style>
         </ChartNoDataMessage>
         <DataSetName>TablaRazaPerro</DataSetName>
-        <Top>0.49431cm</Top>
-        <Left>8.72166cm</Left>
-        <Height>5cm</Height>
-        <Width>7.5cm</Width>
+        <Top>0.17639cm</Top>
+        <Left>8.15688cm</Left>
+        <Height>4.36472cm</Height>
+        <Width>6.46812cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -453,10 +453,10 @@
         </Style>
       </Chart>
     </ReportItems>
-    <Height>2.23423in</Height>
+    <Height>1.84881in</Height>
     <Style />
   </Body>
-  <Width>6.84506in</Width>
+  <Width>5.75787in</Width>
   <Page>
     <PageHeader>
       <Height>3.13187cm</Height>
@@ -467,7 +467,7 @@
           <Source>Embedded</Source>
           <Value>perro</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>11.2951cm</Left>
+          <Left>8.4376cm</Left>
           <Height>3.13187cm</Height>
           <Width>5.24388cm</Width>
           <Style>
@@ -485,7 +485,7 @@
                 <TextRun>
                   <Value>Reporte de las razas de gatos que estan buscando</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -497,9 +497,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.27023cm</Top>
-          <Left>2.13995cm</Left>
+          <Left>0.55245cm</Left>
           <Height>1.49366cm</Height>
-          <Width>10.70737cm</Width>
+          <Width>8.24674cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -545,7 +545,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>1.79917cm</Top>
-          <Left>2.54657cm</Left>
+          <Left>0.00657cm</Left>
           <Height>0.62646cm</Height>
           <Width>8.95138cm</Width>
           <ZIndex>2</ZIndex>
@@ -600,7 +600,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Left>9.70062cm</Left>
+          <Left>6.84312cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>

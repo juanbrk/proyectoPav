@@ -169,7 +169,7 @@
         </TablixRowHierarchy>
         <DataSetName>DSUsuarioNrPublicacion</DataSetName>
         <Top>0.42016cm</Top>
-        <Left>5.46285cm</Left>
+        <Left>1.97035cm</Left>
         <Height>1.2cm</Height>
         <Width>6.98437cm</Width>
         <Style>
@@ -182,7 +182,7 @@
     <Height>0.87375in</Height>
     <Style />
   </Body>
-  <Width>6.93625in</Width>
+  <Width>4.53in</Width>
   <Page>
     <PageHeader>
       <Height>2.69875cm</Height>
@@ -198,7 +198,7 @@
                 <TextRun>
                   <Value>Reporte de los usuarios con las mas  pubilcaciones</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -208,10 +208,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.5158cm</Top>
-          <Left>3.53975cm</Left>
+          <Top>0.3175cm</Top>
+          <Left>0.99975cm</Left>
           <Height>1.36729cm</Height>
-          <Width>10.72854cm</Width>
+          <Width>8.13562cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -226,9 +226,10 @@
           <Source>Embedded</Source>
           <Value>usuario</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>14.27506cm</Left>
-          <Height>2.69875cm</Height>
-          <Width>2.88396cm</Width>
+          <Top>0.07938cm</Top>
+          <Left>9.19506cm</Left>
+          <Height>1.98438cm</Height>
+          <Width>1.98438cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -266,7 +267,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>1.88309cm</Top>
-          <Left>4.09425cm</Left>
           <Height>0.62646cm</Height>
           <Width>10.00442cm</Width>
           <ZIndex>2</ZIndex>
@@ -322,7 +322,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>0.3175cm</Top>
-          <Left>9.79069cm</Left>
+          <Left>3.44069cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>

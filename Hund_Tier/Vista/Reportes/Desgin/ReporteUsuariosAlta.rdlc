@@ -370,7 +370,6 @@
         </TablixRowHierarchy>
         <DataSetName>TablaUsuariosAlta</DataSetName>
         <Top>0.17639cm</Top>
-        <Left>1.50315cm</Left>
         <Height>1.2cm</Height>
         <Width>13.98168cm</Width>
         <Style>
@@ -383,7 +382,7 @@
     <Height>0.86458in</Height>
     <Style />
   </Body>
-  <Width>6.80128in</Width>
+  <Width>5.53045in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -399,7 +398,7 @@
                 <TextRun>
                   <Value>Usuarios dados de alta </Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -411,7 +410,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.41487cm</Top>
-          <Left>4.78931cm</Left>
+          <Left>3.20181cm</Left>
           <Height>1.16836cm</Height>
           <Width>6.67152cm</Width>
           <Style>
@@ -454,7 +453,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>1.58323cm</Top>
-          <Left>3.15511cm</Left>
+          <Left>1.5875cm</Left>
           <Height>0.62646cm</Height>
           <Width>10.00442cm</Width>
           <ZIndex>1</ZIndex>
@@ -472,8 +471,8 @@
           <Source>Embedded</Source>
           <Value>usuario</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.70969cm</Top>
-          <Left>14.33724cm</Left>
+          <Top>0.07469cm</Top>
+          <Left>10.20974cm</Left>
           <Height>1.5cm</Height>
           <Width>1.5cm</Width>
           <ZIndex>2</ZIndex>
@@ -525,7 +524,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>0.07056cm</Top>
-          <Left>9.45236cm</Left>
+          <Left>5.95986cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>
