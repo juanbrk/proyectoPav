@@ -1,0 +1,3 @@
+tipo publicacion
+nombre de usuarios con los mas publicaciones
+cantidad de perros y gatos por tipo de publicacion

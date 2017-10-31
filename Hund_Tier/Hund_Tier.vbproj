@@ -156,6 +156,14 @@
     <Compile Include="Vista\Reportes\Data\DS1.vb">
       <DependentUpon>DS1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Reportes\Data\DSCantidadPorPublicacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCantidadPorPublicacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSCantidadPorPublicacion.vb">
+      <DependentUpon>DSCantidadPorPublicacion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Reportes\Data\DSRazaGato.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,6 +184,25 @@
     </Compile>
     <Compile Include="Vista\Reportes\Data\DSTipoAnimal.vb">
       <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSTipoPublicacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTipoPublicacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSTipoPublicacion.vb">
+      <DependentUpon>DSTipoPublicacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\Data\DSUsuarioNrPublicacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUsuarioNrPublicacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteCantidadPorPublicacion.Designer.vb">
+      <DependentUpon>frm_ReporteCantidadPorPublicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteCantidadPorPublicacion.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Reportes\frm_ReporteRazaPerro.Designer.vb">
       <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
@@ -199,6 +226,18 @@
       <DependentUpon>frm_nuevoReporte.vb</DependentUpon>
     </Compile>
     <Compile Include="Vista\Reportes\frm_nuevoReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteTipoPublicacion.Designer.vb">
+      <DependentUpon>frm_ReporteTipoPublicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteTipoPublicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteUsuarioNrPublicacion.Designer.vb">
+      <DependentUpon>frm_ReporteUsuarioNrPublicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Reportes\frm_ReporteUsuarioNrPublicacion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Reportes\frm_seleccionTipoReporte.Designer.vb">
@@ -254,6 +293,12 @@
     <EmbeddedResource Include="Vista\Login\Frm_main.resx">
       <DependentUpon>Frm_main.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_CantidadPorPulicacion.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_TipoPublicacion.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_UsuarioNrPublicacion.rdlc" />
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteCantidadPorPublicacion.resx">
+      <DependentUpon>frm_ReporteCantidadPorPublicacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\frm_ReporteRazaPerro.resx">
       <DependentUpon>frm_ReporteRazaPerro.vb</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +314,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\frm_ReporteTipoAnimal.resx">
       <DependentUpon>frm_ReporteTipoAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteTipoPublicacion.resx">
+      <DependentUpon>frm_ReporteTipoPublicacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteUsuarioNrPublicacion.resx">
+      <DependentUpon>frm_ReporteUsuarioNrPublicacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\frm_seleccionTipoReporte.resx">
       <DependentUpon>frm_seleccionTipoReporte.vb</DependentUpon>
@@ -305,6 +356,17 @@
     <None Include="Vista\Reportes\Data\DS1.xss">
       <DependentUpon>DS1.xsd</DependentUpon>
     </None>
+    <None Include="Vista\Reportes\Data\DSCantidadPorPublicacion.xsc">
+      <DependentUpon>DSCantidadPorPublicacion.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSCantidadPorPublicacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCantidadPorPublicacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSCantidadPorPublicacion.xss">
+      <DependentUpon>DSCantidadPorPublicacion.xsd</DependentUpon>
+    </None>
     <None Include="Vista\Reportes\Data\DSRazaGato.xsc">
       <DependentUpon>DSRazaGato.xsd</DependentUpon>
     </None>
@@ -337,6 +399,28 @@
     </None>
     <None Include="Vista\Reportes\Data\DSTipoAnimal.xss">
       <DependentUpon>DSTipoAnimal.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoPublicacion.xsc">
+      <DependentUpon>DSTipoPublicacion.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoPublicacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTipoPublicacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSTipoPublicacion.xss">
+      <DependentUpon>DSTipoPublicacion.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSUsuarioNrPublicacion.xsc">
+      <DependentUpon>DSUsuarioNrPublicacion.xsd</DependentUpon>
+    </None>
+    <None Include="Vista\Reportes\Data\DSUsuarioNrPublicacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUsuarioNrPublicacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Vista\Reportes\Data\DSUsuarioNrPublicacion.xss">
+      <DependentUpon>DSUsuarioNrPublicacion.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup />
