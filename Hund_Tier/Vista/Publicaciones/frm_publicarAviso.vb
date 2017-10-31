@@ -260,5 +260,11 @@
         End If 'If de validarCampos()
     End Sub
 
-
+    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        Dim d As DialogResult
+        d = MessageBox.Show("¿Desea volver al menu principal?", "salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If (d = DialogResult.OK) Then
+            Me.Close()
+        End If
+    End Sub
 End Class

@@ -39,9 +39,6 @@
         Return instanciaUsuario
     End Function
 
-    Public Shared Sub inicializarUsuario(usr As Usuario)
-
-    End Sub
 
 
     Private Sub Frm_main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -95,7 +92,56 @@
         mnu_frm_main.Visible = True
     End Sub
 
-    Private Sub MiPerfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MiPerfilToolStripMenuItem.Click
+    Public Sub setUsuario(ByVal user As Usuario)
+        instanciaUsuario = user
+    End Sub
+    Public Sub setEliminado(valor As Boolean)
+        bandera_eliminado = valor
+    End Sub
+    Public Sub setModificado(valor As Boolean)
+        bandera_modificado = True
+    End Sub
+
+    Private Sub lbl_agregar_publicacion_Click(sender As Object, e As EventArgs) Handles btn_nuevaPublicacion.Click
+        mostrarFormSeleccionTipoAvisoPara(SeleccionUsuario.publicarAviso)
+    End Sub
+
+    Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+        Dim d As DialogResult
+        d = MessageBox.Show("¿Desea salir?", "Saliendo", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If d = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub btn_busqueda_Click(sender As Object, e As EventArgs) Handles btn_busqueda.Click
+        'se muestra el form seleccion Tipo aviso, se le pasa por parametro un entero que dice si vamos a agregar
+        'Un nuevo aviso o si vamos a consultar la BD para ver los animales. 
+        mostrarFormSeleccionTipoAvisoPara(SeleccionUsuario.buscarAnimales)
+
+    End Sub
+
+    'Funcion que permite pasar un parametro para que las siguientes forms sepan cual es la 
+    'eleccion del usuario. Si es hacer una nueva publicacion de un animal encontrado, perdido
+    'o en adopcion; o si es para buscar un animal. No cambia en nada como se presentan los siguientes
+    'forms sino que sirve a la hora de ver el form frm_publicar_aviso. que va a cambiar su 
+    'logica si es para buscar animales. 
+    Private Shared Sub mostrarFormSeleccionTipoAvisoPara(eleccionUsuario As SeleccionUsuario)
+        Dim seleccionar_tipo_aviso As New frm_seleccion_tipo_aviso
+        seleccionar_tipo_aviso.setEleccionUsuario(eleccionUsuario)
+        seleccionar_tipo_aviso.ShowDialog()
+    End Sub
+
+    Private Sub lbl_verPublicaciones_Click(sender As Object, e As EventArgs) Handles btn_verPublicaciones.Click
+        'Si el usuario es admin, entonces al hacer click en el boton se va a mostrar el form para generar reporte
+        If esAdministrador() Then
+            Dim formSeleccionarTipoReporte As New frm_seleccionTipoReporte
+            formSeleccionarTipoReporte.ShowDialog()
+
+        End If
+    End Sub
+
+    Private Sub EditarPerfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditarPerfilToolStripMenuItem.Click
         'Creamos un objeto form_ajuste_perfil del tipo Frm_perfil_usuario asi le podemos
         'asignar un usuario como atributo de ese form, para que cuando mostremos el form
         'podamos cargar los campos con los datos del usuario pasado.
@@ -125,51 +171,5 @@
         'PARA QUE DESDE MAIN ME LLEVE A LOGIN NUEVAMENTE
         '????????????????????????????????????????????????????????????????
         'End If
-    End Sub
-
-
-    Public Sub setUsuario(ByVal user As Usuario)
-        instanciaUsuario = user
-    End Sub
-    Public Sub setEliminado(valor As Boolean)
-        bandera_eliminado = valor
-    End Sub
-    Public Sub setModificado(valor As Boolean)
-        bandera_modificado = True
-    End Sub
-
-    Private Sub lbl_agregar_publicacion_Click(sender As Object, e As EventArgs) Handles btn_nuevaPublicacion.Click
-        mostrarFormSeleccionTipoAvisoPara(SeleccionUsuario.publicarAviso)
-    End Sub
-
-    Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub btn_busqueda_Click(sender As Object, e As EventArgs) Handles btn_busqueda.Click
-        'se muestra el form seleccion Tipo aviso, se le pasa por parametro un entero que dice si vamos a agregar
-        'Un nuevo aviso o si vamos a consultar la BD para ver los animales. 
-        mostrarFormSeleccionTipoAvisoPara(SeleccionUsuario.buscarAnimales)
-
-    End Sub
-
-    'Funcion que permite pasar un parametro para que las siguientes forms sepan cual es la 
-    'eleccion del usuario. Si es hacer una nueva publicacion de un animal encontrado, perdido
-    'o en adopcion; o si es para buscar un animal. No cambia en nada como se presentan los siguientes
-    'forms sino que sirve a la hora de ver el form frm_publicar_aviso. que va a cambiar su 
-    'logica si es para buscar animales. 
-    Private Shared Sub mostrarFormSeleccionTipoAvisoPara(eleccionUsuario As SeleccionUsuario)
-        Dim seleccionar_tipo_aviso As New frm_seleccion_tipo_aviso
-        seleccionar_tipo_aviso.setEleccionUsuario(eleccionUsuario)
-        seleccionar_tipo_aviso.ShowDialog()
-    End Sub
-
-    Private Sub lbl_verPublicaciones_Click(sender As Object, e As EventArgs) Handles btn_verPublicaciones.Click
-        'Si el usuario es admin, entonces al hacer click en el boton se va a mostrar el form para generar reporte
-        If esAdministrador() Then
-            Dim formSeleccionarTipoReporte As New frm_seleccionTipoReporte
-            formSeleccionarTipoReporte.ShowDialog()
-
-        End If
     End Sub
 End Class

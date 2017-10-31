@@ -61,6 +61,8 @@ Partial Class Frm_perfil_usuario
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.lbl_email)
         Me.GroupBox1.Controls.Add(Me.txt_email)
         Me.GroupBox1.Controls.Add(Me.lbl_apellido)
@@ -68,9 +70,9 @@ Partial Class Frm_perfil_usuario
         Me.GroupBox1.Controls.Add(Me.txt_nombre)
         Me.GroupBox1.Controls.Add(Me.lbl_nombre)
         Me.GroupBox1.Location = New System.Drawing.Point(17, 16)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(345, 119)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -78,6 +80,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_email
         '
+        Me.lbl_email.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_email.AutoSize = True
         Me.lbl_email.Location = New System.Drawing.Point(8, 89)
         Me.lbl_email.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -88,8 +91,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_email
         '
+        Me.txt_email.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_email.Location = New System.Drawing.Point(80, 85)
-        Me.txt_email.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_email.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.ReadOnly = True
         Me.txt_email.Size = New System.Drawing.Size(256, 22)
@@ -97,6 +101,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_apellido
         '
+        Me.lbl_apellido.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_apellido.AutoSize = True
         Me.lbl_apellido.Location = New System.Drawing.Point(8, 57)
         Me.lbl_apellido.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -107,8 +112,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_apellido
         '
+        Me.txt_apellido.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_apellido.Location = New System.Drawing.Point(80, 53)
-        Me.txt_apellido.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_apellido.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_apellido.Name = "txt_apellido"
         Me.txt_apellido.ReadOnly = True
         Me.txt_apellido.Size = New System.Drawing.Size(256, 22)
@@ -116,8 +122,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_nombre
         '
+        Me.txt_nombre.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_nombre.Location = New System.Drawing.Point(80, 21)
-        Me.txt_nombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_nombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.ReadOnly = True
         Me.txt_nombre.Size = New System.Drawing.Size(256, 22)
@@ -125,6 +132,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_nombre
         '
+        Me.lbl_nombre.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_nombre.AutoSize = True
         Me.lbl_nombre.Location = New System.Drawing.Point(9, 25)
         Me.lbl_nombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -135,6 +143,7 @@ Partial Class Frm_perfil_usuario
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.txt_barrio)
         Me.GroupBox2.Controls.Add(Me.lbl_depto)
         Me.GroupBox2.Controls.Add(Me.txt_depto)
@@ -149,9 +158,9 @@ Partial Class Frm_perfil_usuario
         Me.GroupBox2.Controls.Add(Me.txt_telefono)
         Me.GroupBox2.Controls.Add(Me.lbl_num_telefono)
         Me.GroupBox2.Location = New System.Drawing.Point(17, 143)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(345, 206)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
@@ -159,8 +168,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_barrio
         '
+        Me.txt_barrio.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_barrio.Location = New System.Drawing.Point(80, 57)
-        Me.txt_barrio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_barrio.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_barrio.Name = "txt_barrio"
         Me.txt_barrio.ReadOnly = True
         Me.txt_barrio.Size = New System.Drawing.Size(256, 22)
@@ -168,6 +178,8 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_depto
         '
+        Me.lbl_depto.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_depto.AutoSize = True
         Me.lbl_depto.Location = New System.Drawing.Point(120, 153)
         Me.lbl_depto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -178,8 +190,10 @@ Partial Class Frm_perfil_usuario
         '
         'txt_depto
         '
+        Me.txt_depto.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_depto.Location = New System.Drawing.Point(231, 149)
-        Me.txt_depto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_depto.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_depto.Name = "txt_depto"
         Me.txt_depto.ReadOnly = True
         Me.txt_depto.Size = New System.Drawing.Size(105, 22)
@@ -187,6 +201,8 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_piso
         '
+        Me.lbl_piso.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_piso.AutoSize = True
         Me.lbl_piso.Location = New System.Drawing.Point(8, 153)
         Me.lbl_piso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -197,8 +213,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_piso
         '
+        Me.txt_piso.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txt_piso.Location = New System.Drawing.Point(56, 149)
-        Me.txt_piso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_piso.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_piso.Name = "txt_piso"
         Me.txt_piso.ReadOnly = True
         Me.txt_piso.Size = New System.Drawing.Size(53, 22)
@@ -206,6 +223,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_numero
         '
+        Me.lbl_numero.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_numero.AutoSize = True
         Me.lbl_numero.Location = New System.Drawing.Point(8, 121)
         Me.lbl_numero.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -216,8 +234,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_numero_calle
         '
+        Me.txt_numero_calle.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_numero_calle.Location = New System.Drawing.Point(80, 117)
-        Me.txt_numero_calle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_numero_calle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_numero_calle.Name = "txt_numero_calle"
         Me.txt_numero_calle.ReadOnly = True
         Me.txt_numero_calle.Size = New System.Drawing.Size(256, 22)
@@ -228,7 +247,7 @@ Partial Class Frm_perfil_usuario
         Me.cmb_barrio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_barrio.FormattingEnabled = True
         Me.cmb_barrio.Location = New System.Drawing.Point(80, 54)
-        Me.cmb_barrio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmb_barrio.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_barrio.Name = "cmb_barrio"
         Me.cmb_barrio.Size = New System.Drawing.Size(256, 24)
         Me.cmb_barrio.TabIndex = 6
@@ -236,6 +255,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_calle
         '
+        Me.lbl_calle.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_calle.AutoSize = True
         Me.lbl_calle.Location = New System.Drawing.Point(8, 89)
         Me.lbl_calle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -246,8 +266,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_calle
         '
+        Me.txt_calle.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_calle.Location = New System.Drawing.Point(80, 85)
-        Me.txt_calle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_calle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_calle.Name = "txt_calle"
         Me.txt_calle.ReadOnly = True
         Me.txt_calle.Size = New System.Drawing.Size(256, 22)
@@ -255,6 +276,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_barrio
         '
+        Me.lbl_barrio.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_barrio.AutoSize = True
         Me.lbl_barrio.Location = New System.Drawing.Point(8, 57)
         Me.lbl_barrio.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -265,8 +287,9 @@ Partial Class Frm_perfil_usuario
         '
         'txt_telefono
         '
+        Me.txt_telefono.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_telefono.Location = New System.Drawing.Point(80, 21)
-        Me.txt_telefono.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_telefono.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_telefono.Name = "txt_telefono"
         Me.txt_telefono.ReadOnly = True
         Me.txt_telefono.Size = New System.Drawing.Size(256, 22)
@@ -274,6 +297,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_num_telefono
         '
+        Me.lbl_num_telefono.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_num_telefono.AutoSize = True
         Me.lbl_num_telefono.Location = New System.Drawing.Point(9, 25)
         Me.lbl_num_telefono.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -284,15 +308,17 @@ Partial Class Frm_perfil_usuario
         '
         'GroupBox3
         '
+        Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.Controls.Add(Me.btn_modificar_pass)
         Me.GroupBox3.Controls.Add(Me.lbl_username)
         Me.GroupBox3.Controls.Add(Me.txt_username)
         Me.GroupBox3.Controls.Add(Me.txt_password)
         Me.GroupBox3.Controls.Add(Me.lbl_password)
         Me.GroupBox3.Location = New System.Drawing.Point(17, 356)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Size = New System.Drawing.Size(345, 97)
         Me.GroupBox3.TabIndex = 7
         Me.GroupBox3.TabStop = False
@@ -300,8 +326,9 @@ Partial Class Frm_perfil_usuario
         '
         'btn_modificar_pass
         '
+        Me.btn_modificar_pass.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_modificar_pass.Location = New System.Drawing.Point(231, 60)
-        Me.btn_modificar_pass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_modificar_pass.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_modificar_pass.Name = "btn_modificar_pass"
         Me.btn_modificar_pass.Size = New System.Drawing.Size(100, 28)
         Me.btn_modificar_pass.TabIndex = 11
@@ -320,8 +347,10 @@ Partial Class Frm_perfil_usuario
         '
         'txt_username
         '
+        Me.txt_username.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_username.Location = New System.Drawing.Point(148, 30)
-        Me.txt_username.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_username.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_username.Name = "txt_username"
         Me.txt_username.ReadOnly = True
         Me.txt_username.Size = New System.Drawing.Size(188, 22)
@@ -329,8 +358,10 @@ Partial Class Frm_perfil_usuario
         '
         'txt_password
         '
+        Me.txt_password.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_password.Location = New System.Drawing.Point(109, 64)
-        Me.txt_password.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_password.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.ReadOnly = True
@@ -339,6 +370,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_password
         '
+        Me.lbl_password.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbl_password.AutoSize = True
         Me.lbl_password.Location = New System.Drawing.Point(16, 68)
         Me.lbl_password.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -349,8 +381,9 @@ Partial Class Frm_perfil_usuario
         '
         'btn_modificar_info
         '
+        Me.btn_modificar_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_modificar_info.Location = New System.Drawing.Point(73, 460)
-        Me.btn_modificar_info.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_modificar_info.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_modificar_info.Name = "btn_modificar_info"
         Me.btn_modificar_info.Size = New System.Drawing.Size(188, 28)
         Me.btn_modificar_info.TabIndex = 6
@@ -360,7 +393,7 @@ Partial Class Frm_perfil_usuario
         'btn_salir
         '
         Me.btn_salir.Location = New System.Drawing.Point(269, 460)
-        Me.btn_salir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_salir.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_salir.Name = "btn_salir"
         Me.btn_salir.Size = New System.Drawing.Size(100, 28)
         Me.btn_salir.TabIndex = 8
@@ -369,8 +402,9 @@ Partial Class Frm_perfil_usuario
         '
         'btn_cancelar
         '
+        Me.btn_cancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_cancelar.Location = New System.Drawing.Point(160, 459)
-        Me.btn_cancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_cancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(100, 28)
         Me.btn_cancelar.TabIndex = 9
@@ -380,8 +414,9 @@ Partial Class Frm_perfil_usuario
         '
         'btn_guardar_cambios
         '
+        Me.btn_guardar_cambios.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_guardar_cambios.Location = New System.Drawing.Point(269, 459)
-        Me.btn_guardar_cambios.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_guardar_cambios.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_guardar_cambios.Name = "btn_guardar_cambios"
         Me.btn_guardar_cambios.Size = New System.Drawing.Size(100, 28)
         Me.btn_guardar_cambios.TabIndex = 10
@@ -391,6 +426,7 @@ Partial Class Frm_perfil_usuario
         '
         'lbl_eliminar_usuario
         '
+        Me.lbl_eliminar_usuario.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_eliminar_usuario.AutoSize = True
         Me.lbl_eliminar_usuario.Location = New System.Drawing.Point(17, 494)
         Me.lbl_eliminar_usuario.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -412,7 +448,9 @@ Partial Class Frm_perfil_usuario
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximumSize = New System.Drawing.Size(600, 561)
+        Me.MinimumSize = New System.Drawing.Size(403, 561)
         Me.Name = "Frm_perfil_usuario"
         Me.Text = "Mi usuario"
         Me.GroupBox1.ResumeLayout(False)
