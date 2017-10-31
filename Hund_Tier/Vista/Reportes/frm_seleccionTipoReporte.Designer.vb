@@ -142,7 +142,7 @@ Partial Class frm_seleccionTipoReporte
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frm_seleccionTipoReporte"
-        Me.Text = "Seleccionar tipo de reporte a generar"
+        Me.Text = "it"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
