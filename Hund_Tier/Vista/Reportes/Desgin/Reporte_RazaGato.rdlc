@@ -215,7 +215,7 @@
                     <Style>
                       <Color>White</Color>
                     </Style>
-                    <UseValueAsLabel>true</UseValueAsLabel>
+                    <Label>#PERCENT</Label>
                     <Visible>true</Visible>
                   </ChartDataLabel>
                   <Style />
