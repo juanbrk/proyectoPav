@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTipoPublicacion" targetNamespace="http://tempuri.org/DSTipoPublicacion.xsd" xmlns:mstns="http://tempuri.org/DSTipoPublicacion.xsd" xmlns="http://tempuri.org/DSTipoPublicacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTipoPublicacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTipoPublicacion" msprop:Generator_UserDSName="DSTipoPublicacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTTipoPublicacion" msprop:Generator_TableClassName="DTTipoPublicacionDataTable" msprop:Generator_TableVarName="tableDTTipoPublicacion" msprop:Generator_TablePropName="DTTipoPublicacion" msprop:Generator_RowDeletingName="DTTipoPublicacionRowDeleting" msprop:Generator_RowChangingName="DTTipoPublicacionRowChanging" msprop:Generator_RowEvHandlerName="DTTipoPublicacionRowChangeEventHandler" msprop:Generator_RowDeletedName="DTTipoPublicacionRowDeleted" msprop:Generator_UserTableName="DTTipoPublicacion" msprop:Generator_RowChangedName="DTTipoPublicacionRowChanged" msprop:Generator_RowEvArgName="DTTipoPublicacionRowChangeEvent" msprop:Generator_RowClassName="DTTipoPublicacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TipoPublicacion" msprop:Generator_ColumnVarNameInTable="columnTipoPublicacion" msprop:Generator_ColumnPropNameInRow="TipoPublicacion" msprop:Generator_ColumnPropNameInTable="TipoPublicacionColumn" msprop:Generator_UserColumnName="TipoPublicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

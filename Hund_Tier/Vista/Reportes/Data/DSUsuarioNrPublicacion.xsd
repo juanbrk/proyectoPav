@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSUsuarioNrPublicacion" targetNamespace="http://tempuri.org/DSUsuarioNrPublicacion.xsd" xmlns:mstns="http://tempuri.org/DSUsuarioNrPublicacion.xsd" xmlns="http://tempuri.org/DSUsuarioNrPublicacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSUsuarioNrPublicacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSUsuarioNrPublicacion" msprop:Generator_UserDSName="DSUsuarioNrPublicacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTUsuarioNrPublicacion" msprop:Generator_TableClassName="DTUsuarioNrPublicacionDataTable" msprop:Generator_TableVarName="tableDTUsuarioNrPublicacion" msprop:Generator_TablePropName="DTUsuarioNrPublicacion" msprop:Generator_RowDeletingName="DTUsuarioNrPublicacionRowDeleting" msprop:Generator_RowChangingName="DTUsuarioNrPublicacionRowChanging" msprop:Generator_RowEvHandlerName="DTUsuarioNrPublicacionRowChangeEventHandler" msprop:Generator_RowDeletedName="DTUsuarioNrPublicacionRowDeleted" msprop:Generator_UserTableName="DTUsuarioNrPublicacion" msprop:Generator_RowChangedName="DTUsuarioNrPublicacionRowChanged" msprop:Generator_RowEvArgName="DTUsuarioNrPublicacionRowChangeEvent" msprop:Generator_RowClassName="DTUsuarioNrPublicacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="NrPublicacion" msprop:Generator_ColumnVarNameInTable="columnNrPublicacion" msprop:Generator_ColumnPropNameInRow="NrPublicacion" msprop:Generator_ColumnPropNameInTable="NrPublicacionColumn" msprop:Generator_UserColumnName="NrPublicacion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

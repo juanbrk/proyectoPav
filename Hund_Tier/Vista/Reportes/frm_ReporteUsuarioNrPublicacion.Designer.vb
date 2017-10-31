@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_ReporteTipoAnimal
+Partial Class frm_ReporteUsuarioNrPublicacion
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,44 +23,33 @@ Partial Class frm_ReporteTipoAnimal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.DTTipoAnimalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DSTipoAnimal = New Hund_Tier.DSTipoAnimal()
-        Me.RVTipoAnimal = New Microsoft.Reporting.WinForms.ReportViewer()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.DTUsuarioNrPublicacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DSUsuarioNrPublicacion = New Hund_Tier.DSUsuarioNrPublicacion()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.mtxt_FechaHasta = New System.Windows.Forms.MaskedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.mtxt_fechaDesde = New System.Windows.Forms.MaskedTextBox()
         Me.btn_generarReporte = New System.Windows.Forms.Button()
-        CType(Me.DTTipoAnimalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DSTipoAnimal, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RVUsuarioNrPublicacion = New Microsoft.Reporting.WinForms.ReportViewer()
+        CType(Me.DTUsuarioNrPublicacionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DSUsuarioNrPublicacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DTTipoAnimalBindingSource
+        'DTUsuarioNrPublicacionBindingSource
         '
-        Me.DTTipoAnimalBindingSource.DataMember = "DTTipoAnimal"
-        Me.DTTipoAnimalBindingSource.DataSource = Me.DSTipoAnimal
+        Me.DTUsuarioNrPublicacionBindingSource.DataMember = "DTUsuarioNrPublicacion"
+        Me.DTUsuarioNrPublicacionBindingSource.DataSource = Me.DSUsuarioNrPublicacion
         '
-        'DSTipoAnimal
+        'DSUsuarioNrPublicacion
         '
-        Me.DSTipoAnimal.DataSetName = "DSTipoAnimal"
-        Me.DSTipoAnimal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'RVTipoAnimal
-        '
-        ReportDataSource2.Name = "TablaTipoAnimal"
-        ReportDataSource2.Value = Me.DTTipoAnimalBindingSource
-        Me.RVTipoAnimal.LocalReport.DataSources.Add(ReportDataSource2)
-        Me.RVTipoAnimal.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_TipoAnimal.rdlc"
-        Me.RVTipoAnimal.Location = New System.Drawing.Point(12, 58)
-        Me.RVTipoAnimal.Name = "RVTipoAnimal"
-        Me.RVTipoAnimal.Size = New System.Drawing.Size(541, 289)
-        Me.RVTipoAnimal.TabIndex = 0
+        Me.DSUsuarioNrPublicacion.DataSetName = "DSUsuarioNrPublicacion"
+        Me.DSUsuarioNrPublicacion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(177, 22)
+        Me.Label2.Location = New System.Drawing.Point(182, 23)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 13)
@@ -69,7 +58,7 @@ Partial Class frm_ReporteTipoAnimal
         '
         'mtxt_FechaHasta
         '
-        Me.mtxt_FechaHasta.Location = New System.Drawing.Point(252, 19)
+        Me.mtxt_FechaHasta.Location = New System.Drawing.Point(257, 20)
         Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_FechaHasta.Mask = "00/00/0000"
         Me.mtxt_FechaHasta.Name = "mtxt_FechaHasta"
@@ -80,7 +69,7 @@ Partial Class frm_ReporteTipoAnimal
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(15, 22)
+        Me.Label1.Location = New System.Drawing.Point(20, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(72, 13)
@@ -89,7 +78,7 @@ Partial Class frm_ReporteTipoAnimal
         '
         'mtxt_fechaDesde
         '
-        Me.mtxt_fechaDesde.Location = New System.Drawing.Point(91, 19)
+        Me.mtxt_fechaDesde.Location = New System.Drawing.Point(96, 20)
         Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_fechaDesde.Mask = "00/00/0000"
         Me.mtxt_fechaDesde.Name = "mtxt_fechaDesde"
@@ -99,7 +88,7 @@ Partial Class frm_ReporteTipoAnimal
         '
         'btn_generarReporte
         '
-        Me.btn_generarReporte.Location = New System.Drawing.Point(431, 20)
+        Me.btn_generarReporte.Location = New System.Drawing.Point(436, 21)
         Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
         Me.btn_generarReporte.Size = New System.Drawing.Size(80, 19)
@@ -107,31 +96,42 @@ Partial Class frm_ReporteTipoAnimal
         Me.btn_generarReporte.Text = "Generar"
         Me.btn_generarReporte.UseVisualStyleBackColor = True
         '
-        'frm_ReporteTipoAnimal
+        'RVUsuarioNrPublicacion
+        '
+        ReportDataSource1.Name = "DSUsuarioNrPublicacion"
+        ReportDataSource1.Value = Me.DTUsuarioNrPublicacionBindingSource
+        Me.RVUsuarioNrPublicacion.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.RVUsuarioNrPublicacion.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_UsuarioNrPublicacion.rdlc"
+        Me.RVUsuarioNrPublicacion.Location = New System.Drawing.Point(12, 45)
+        Me.RVUsuarioNrPublicacion.Name = "RVUsuarioNrPublicacion"
+        Me.RVUsuarioNrPublicacion.Size = New System.Drawing.Size(635, 296)
+        Me.RVUsuarioNrPublicacion.TabIndex = 17
+        '
+        'frm_ReporteUsuarioNrPublicacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(565, 359)
+        Me.ClientSize = New System.Drawing.Size(659, 363)
+        Me.Controls.Add(Me.RVUsuarioNrPublicacion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
-        Me.Controls.Add(Me.RVTipoAnimal)
-        Me.Name = "frm_ReporteTipoAnimal"
-        Me.Text = "Reporte del tipo de los animales"
-        CType(Me.DTTipoAnimalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DSTipoAnimal, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Name = "frm_ReporteUsuarioNrPublicacion"
+        Me.Text = "Reporte de la cantidad de reportes por usuario"
+        CType(Me.DTUsuarioNrPublicacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DSUsuarioNrPublicacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RVTipoAnimal As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents DTTipoAnimalBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DSTipoAnimal As Hund_Tier.DSTipoAnimal
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents mtxt_FechaHasta As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents mtxt_fechaDesde As System.Windows.Forms.MaskedTextBox
     Friend WithEvents btn_generarReporte As System.Windows.Forms.Button
+    Friend WithEvents RVUsuarioNrPublicacion As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents DTUsuarioNrPublicacionBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DSUsuarioNrPublicacion As Hund_Tier.DSUsuarioNrPublicacion
 End Class
