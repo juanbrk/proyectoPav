@@ -61,6 +61,15 @@ Public Class PublicacionDAO
         End Try
     End Function
 
+    Friend Function generarReporteRazasPerro(reformatedDesde As String, reformattedHasta As String) As Object
+        Dim sql As String = "Select TOP 6 R.nombre_raza  as 'RazaPerro', COUNT(A.cod_raza) AS 'CantidadRazaPerro' " &
+            " From ((Publicacion P JOIN Animal A On (P.id_animal = A.id_animal  AND P.tipo_animal = A.cod_tipo_animal)  JOIN Razas R ON R.cod_raza = A.cod_raza))" &
+            " WHERE  P.fecha_publicacion>= '" + reformatedDesde + "' AND P.fecha_publicacion<='" + reformattedHasta + "' AND (A.cod_tipo_animal = 1)" &
+          " Group by R.nombre_raza" &
+          " Order By 'CantidadRazaPerro' DESC"
+        Return BDHelper.getDBHelper.ConsultaSQL(sql)
+    End Function
+
     Friend Function getReportesTipoAnimal(reformatedDesde As String, reformatedHasta As Object) As Object
         Dim sql As String = "SELECT  T.nombre_tipo AS 'TipoAninmal', COUNT(tipo_animal) AS 'CantidadAnimal' FROM Publicacion P JOIN Tipo_Animal T ON P.tipo_animal = T.codigo_animal " &
             "WHERE  P.fecha_publicacion>= '" + reformatedDesde + "' AND P.fecha_publicacion<='" + reformatedHasta + "'" &

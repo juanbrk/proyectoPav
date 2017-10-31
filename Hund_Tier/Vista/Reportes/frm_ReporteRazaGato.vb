@@ -1,4 +1,7 @@
-﻿Public Class frm_ReporteRazaGato
+﻿Imports System.Globalization
+Imports Microsoft.Reporting.WinForms
+
+Public Class frm_ReporteRazaGato
 
     Private Sub frm_ReporteRazaGato_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
