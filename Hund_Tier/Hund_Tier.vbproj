@@ -105,18 +105,6 @@
     <Compile Include="Servicios\CombosService.vb" />
     <Compile Include="Servicios\PublicacionService.vb" />
     <Compile Include="Servicios\UsuariosService.vb" />
-    <Compile Include="Vista\Publicaciones\Frm_confirmacionPublicacion.Designer.vb">
-      <DependentUpon>Frm_confirmacionPublicacion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Publicaciones\Frm_confirmacionPublicacion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Publicaciones\Frm_fechasBusqueda.Designer.vb">
-      <DependentUpon>Frm_fechasBusqueda.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Publicaciones\Frm_fechasBusqueda.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Vista\Publicaciones\frm_listarPublicaciones.Designer.vb">
       <DependentUpon>frm_listarPublicaciones.vb</DependentUpon>
     </Compile>
@@ -222,10 +210,10 @@
     <Compile Include="Vista\Reportes\frm_ReporteTipoAnimal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Reportes\frm_nuevoReporte.Designer.vb">
-      <DependentUpon>frm_nuevoReporte.vb</DependentUpon>
+    <Compile Include="Vista\Reportes\frm_ReporteAltaUsuario.Designer.vb">
+      <DependentUpon>frm_ReporteAltaUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Reportes\frm_nuevoReporte.vb">
+    <Compile Include="Vista\Reportes\frm_ReporteAltaUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Reportes\frm_ReporteTipoPublicacion.Designer.vb">
@@ -272,12 +260,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Publicaciones\Frm_confirmacionPublicacion.resx">
-      <DependentUpon>Frm_confirmacionPublicacion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Publicaciones\Frm_fechasBusqueda.resx">
-      <DependentUpon>Frm_fechasBusqueda.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Publicaciones\frm_listarPublicaciones.resx">
       <DependentUpon>frm_listarPublicaciones.vb</DependentUpon>
     </EmbeddedResource>
@@ -306,8 +288,8 @@
     <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_RazaGato.rdlc" />
     <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_TipoAnimal.rdlc" />
     <EmbeddedResource Include="Vista\Reportes\Desgin\Reporte_RazaPerro.rdlc" />
-    <EmbeddedResource Include="Vista\Reportes\frm_nuevoReporte.resx">
-      <DependentUpon>frm_nuevoReporte.vb</DependentUpon>
+    <EmbeddedResource Include="Vista\Reportes\frm_ReporteAltaUsuario.resx">
+      <DependentUpon>frm_ReporteAltaUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Reportes\frm_ReporteRazaGato.resx">
       <DependentUpon>frm_ReporteRazaGato.vb</DependentUpon>

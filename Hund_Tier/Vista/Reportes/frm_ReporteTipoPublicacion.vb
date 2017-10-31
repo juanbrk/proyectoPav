@@ -17,7 +17,7 @@ Public Class frm_ReporteTipoPublicacion
             Dim reformattedHasta As String = fechaHasta.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
             RVTipoPublicacion.LocalReport.DataSources.Clear()
             RVTipoPublicacion.LocalReport.SetParameters({New ReportParameter("pFechaDesde", mtxt_fechaDesde.Text), New ReportParameter("pFechaHasta", mtxt_FechaHasta.Text)})
-            RVTipoPublicacion.LocalReport.DataSources.Add(New ReportDataSource("DSTipoPublicacion", oPublicacionService.generarReporteTipoAnimal(reformatedDesde, reformattedHasta)))
+            RVTipoPublicacion.LocalReport.DataSources.Add(New ReportDataSource("DSTipoPublicacion", oPublicacionService.generarReporteTipoPublicacion(reformatedDesde, reformattedHasta)))
             RVTipoPublicacion.RefreshReport()
         Else
             MsgBox("Periodo incorrecto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")

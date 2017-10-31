@@ -364,7 +364,7 @@
     </DataSet>
   </DataSets>
   <ReportParameters>
-    <ReportParameter Name="pFchaDesde">
+    <ReportParameter Name="pFechaDesde">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>

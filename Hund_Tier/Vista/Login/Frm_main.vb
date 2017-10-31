@@ -170,9 +170,6 @@
             Dim formSeleccionarTipoReporte As New frm_seleccionTipoReporte
             formSeleccionarTipoReporte.ShowDialog()
 
-            Me.Hide()
-            bandera_escondida = True
-
         End If
     End Sub
 End Class

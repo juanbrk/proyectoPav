@@ -35,7 +35,28 @@ Public Class PublicacionService
         Return publiDao.cargarnuevaBusqueda(unaBusqueda)
     End Function
 
+    Friend Function generarReporteAnimalXTipoPublicacion(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.generarReporteAnimalXTipoPublicacion(reformatedDesde, reformattedHasta)
+    End Function
+
+    Friend Function generarReporteUsuariosPublicaciones(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.generarReportePublicacionXUsuario(reformatedDesde, reformattedHasta)
+    End Function
+
+    Friend Function generarReporteRazasGato(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.generarReporteRazasGato(reformatedDesde, reformattedHasta)
+    End Function
+
+    Friend Function generarReporteRazasPerro(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.generarReporteRazasPerro(reformatedDesde, reformattedHasta)
+    End Function
+
+    Friend Function generarReporteTipoPublicacion(reformatedDesde As String, reformattedHasta As String) As Object
+        Return publiDao.getReportesTipoPublicacion(reformatedDesde, reformattedHasta)
+    End Function
+
     Friend Function generarReporteTipoAnimal(reformatedDesde As String, reformattedHasta As String) As Object
         Return publiDao.getReportesTipoAnimal(reformatedDesde, reformattedHasta)
     End Function
+
 End Class
