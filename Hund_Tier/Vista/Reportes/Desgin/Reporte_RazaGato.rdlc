@@ -212,7 +212,11 @@
                     <Y>=Max(Fields!CantidadRazaGato.Value)</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
-                    <Style />
+                    <Style>
+                      <Color>White</Color>
+                    </Style>
+                    <UseValueAsLabel>true</UseValueAsLabel>
+                    <Visible>true</Visible>
                   </ChartDataLabel>
                   <Style />
                   <ChartMarker>

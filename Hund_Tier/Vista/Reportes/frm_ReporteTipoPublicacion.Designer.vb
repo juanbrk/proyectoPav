@@ -88,6 +88,7 @@ Partial Class frm_ReporteTipoPublicacion
         '
         'btn_generarReporte
         '
+        Me.btn_generarReporte.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_generarReporte.Location = New System.Drawing.Point(432, 7)
         Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
@@ -98,6 +99,8 @@ Partial Class frm_ReporteTipoPublicacion
         '
         'RVTipoPublicacion
         '
+        Me.RVTipoPublicacion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "DSTipoPublicacion"
         ReportDataSource1.Value = Me.DTTipoPublicacionBindingSource
         Me.RVTipoPublicacion.LocalReport.DataSources.Add(ReportDataSource1)
@@ -111,13 +114,15 @@ Partial Class frm_ReporteTipoPublicacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(657, 351)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.RVTipoPublicacion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteTipoPublicacion"
         Me.Text = "Reporte del Tipo de las Publicaciones"
         CType(Me.DTTipoPublicacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

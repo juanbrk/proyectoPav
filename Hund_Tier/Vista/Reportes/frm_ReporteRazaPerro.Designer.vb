@@ -34,6 +34,8 @@ Partial Class frm_ReporteRazaPerro
         '
         'RVRazaPerro
         '
+        Me.RVRazaPerro.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RVRazaPerro.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_RazaPerro.rdlc"
         Me.RVRazaPerro.Location = New System.Drawing.Point(12, 48)
         Me.RVRazaPerro.Name = "RVRazaPerro"
@@ -87,6 +89,7 @@ Partial Class frm_ReporteRazaPerro
         '
         'btn_generarReporte
         '
+        Me.btn_generarReporte.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_generarReporte.Location = New System.Drawing.Point(431, 12)
         Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
@@ -99,13 +102,15 @@ Partial Class frm_ReporteRazaPerro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(662, 358)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
         Me.Controls.Add(Me.RVRazaPerro)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteRazaPerro"
         Me.Text = "frm_ReporteRazaPerro"
         CType(Me.DSRazaPerro, System.ComponentModel.ISupportInitialize).EndInit()

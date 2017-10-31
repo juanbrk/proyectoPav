@@ -48,6 +48,8 @@ Partial Class frm_ReporteTipoAnimal
         '
         'RVTipoAnimal
         '
+        Me.RVTipoAnimal.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "TablaTipoAnimal"
         ReportDataSource1.Value = Me.DTTipoAnimalBindingSource
         Me.RVTipoAnimal.LocalReport.DataSources.Add(ReportDataSource1)
@@ -70,7 +72,7 @@ Partial Class frm_ReporteTipoAnimal
         'mtxt_FechaHasta
         '
         Me.mtxt_FechaHasta.Location = New System.Drawing.Point(252, 19)
-        Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_FechaHasta.Mask = "00/00/0000"
         Me.mtxt_FechaHasta.Name = "mtxt_FechaHasta"
         Me.mtxt_FechaHasta.Size = New System.Drawing.Size(76, 20)
@@ -90,7 +92,7 @@ Partial Class frm_ReporteTipoAnimal
         'mtxt_fechaDesde
         '
         Me.mtxt_fechaDesde.Location = New System.Drawing.Point(91, 19)
-        Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_fechaDesde.Mask = "00/00/0000"
         Me.mtxt_fechaDesde.Name = "mtxt_fechaDesde"
         Me.mtxt_fechaDesde.Size = New System.Drawing.Size(76, 20)
@@ -100,7 +102,7 @@ Partial Class frm_ReporteTipoAnimal
         'btn_generarReporte
         '
         Me.btn_generarReporte.Location = New System.Drawing.Point(431, 20)
-        Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
         Me.btn_generarReporte.Size = New System.Drawing.Size(80, 19)
         Me.btn_generarReporte.TabIndex = 12
@@ -111,13 +113,15 @@ Partial Class frm_ReporteTipoAnimal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(653, 359)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
         Me.Controls.Add(Me.RVTipoAnimal)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteTipoAnimal"
         Me.Text = "Reporte del tipo de los animales"
         CType(Me.DTTipoAnimalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

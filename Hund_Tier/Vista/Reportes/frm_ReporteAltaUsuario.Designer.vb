@@ -48,6 +48,8 @@ Partial Class frm_ReporteAltaUsuario
         '
         'rpt_animales
         '
+        Me.rpt_animales.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "TablaUsuariosAlta"
         ReportDataSource1.Value = Me.ReporteUsuariosBindingSource
         Me.rpt_animales.LocalReport.DataSources.Add(ReportDataSource1)
@@ -70,7 +72,7 @@ Partial Class frm_ReporteAltaUsuario
         'mtxt_FechaHasta
         '
         Me.mtxt_FechaHasta.Location = New System.Drawing.Point(253, 11)
-        Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.mtxt_FechaHasta.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_FechaHasta.Mask = "00/00/0000"
         Me.mtxt_FechaHasta.Name = "mtxt_FechaHasta"
         Me.mtxt_FechaHasta.Size = New System.Drawing.Size(76, 20)
@@ -90,7 +92,7 @@ Partial Class frm_ReporteAltaUsuario
         'mtxt_fechaDesde
         '
         Me.mtxt_fechaDesde.Location = New System.Drawing.Point(92, 11)
-        Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.mtxt_fechaDesde.Margin = New System.Windows.Forms.Padding(2)
         Me.mtxt_fechaDesde.Mask = "00/00/0000"
         Me.mtxt_fechaDesde.Name = "mtxt_fechaDesde"
         Me.mtxt_fechaDesde.Size = New System.Drawing.Size(76, 20)
@@ -99,8 +101,9 @@ Partial Class frm_ReporteAltaUsuario
         '
         'btn_generarReporte
         '
+        Me.btn_generarReporte.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_generarReporte.Location = New System.Drawing.Point(410, 11)
-        Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
         Me.btn_generarReporte.Size = New System.Drawing.Size(80, 19)
         Me.btn_generarReporte.TabIndex = 7
@@ -118,7 +121,9 @@ Partial Class frm_ReporteAltaUsuario
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
         Me.Controls.Add(Me.rpt_animales)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteAltaUsuario"
         Me.Text = "```"
         CType(Me.ReporteUsuariosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

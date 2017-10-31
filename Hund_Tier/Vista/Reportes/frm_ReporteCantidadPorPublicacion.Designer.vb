@@ -23,7 +23,7 @@ Partial Class frm_ReporteCantidadPorPublicacion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.DTCantidadPorPublicacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DSCantidadPorPublicacion = New Hund_Tier.DSCantidadPorPublicacion()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -88,6 +88,7 @@ Partial Class frm_ReporteCantidadPorPublicacion
         '
         'btn_generarReporte
         '
+        Me.btn_generarReporte.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_generarReporte.Location = New System.Drawing.Point(431, 7)
         Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
@@ -98,9 +99,11 @@ Partial Class frm_ReporteCantidadPorPublicacion
         '
         'RVCantidadPorPublicacion
         '
-        ReportDataSource1.Name = "DSCantidadPorPublicacion"
-        ReportDataSource1.Value = Me.DTCantidadPorPublicacionBindingSource
-        Me.RVCantidadPorPublicacion.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.RVCantidadPorPublicacion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ReportDataSource2.Name = "DSCantidadPorPublicacion"
+        ReportDataSource2.Value = Me.DTCantidadPorPublicacionBindingSource
+        Me.RVCantidadPorPublicacion.LocalReport.DataSources.Add(ReportDataSource2)
         Me.RVCantidadPorPublicacion.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_CantidadPorPulicacion.rdlc"
         Me.RVCantidadPorPublicacion.Location = New System.Drawing.Point(12, 41)
         Me.RVCantidadPorPublicacion.Name = "RVCantidadPorPublicacion"
@@ -111,13 +114,15 @@ Partial Class frm_ReporteCantidadPorPublicacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(662, 351)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.RVCantidadPorPublicacion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteCantidadPorPublicacion"
         Me.Text = "Reporte de la cantidad de los tipos de publicaciones"
         CType(Me.DTCantidadPorPublicacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

@@ -23,7 +23,7 @@ Partial Class frm_ReporteRazaGato
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.DTRazaGatoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DSRazaGato = New Hund_Tier.DSRazaGato()
         Me.RVRazaGato = New Microsoft.Reporting.WinForms.ReportViewer()
@@ -48,9 +48,9 @@ Partial Class frm_ReporteRazaGato
         '
         'RVRazaGato
         '
-        ReportDataSource1.Name = "TablaRazaGato"
-        ReportDataSource1.Value = Me.DTRazaGatoBindingSource
-        Me.RVRazaGato.LocalReport.DataSources.Add(ReportDataSource1)
+        ReportDataSource2.Name = "TablaRazaGato"
+        ReportDataSource2.Value = Me.DTRazaGatoBindingSource
+        Me.RVRazaGato.LocalReport.DataSources.Add(ReportDataSource2)
         Me.RVRazaGato.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_RazaGato.rdlc"
         Me.RVRazaGato.Location = New System.Drawing.Point(12, 60)
         Me.RVRazaGato.Name = "RVRazaGato"
@@ -111,13 +111,15 @@ Partial Class frm_ReporteRazaGato
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(660, 373)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
         Me.Controls.Add(Me.RVRazaGato)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteRazaGato"
         Me.Text = "Reporte de la raza de los gatos"
         CType(Me.DTRazaGatoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

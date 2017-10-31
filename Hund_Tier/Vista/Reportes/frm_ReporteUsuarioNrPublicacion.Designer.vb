@@ -88,6 +88,7 @@ Partial Class frm_ReporteUsuarioNrPublicacion
         '
         'btn_generarReporte
         '
+        Me.btn_generarReporte.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_generarReporte.Location = New System.Drawing.Point(436, 21)
         Me.btn_generarReporte.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_generarReporte.Name = "btn_generarReporte"
@@ -98,6 +99,8 @@ Partial Class frm_ReporteUsuarioNrPublicacion
         '
         'RVUsuarioNrPublicacion
         '
+        Me.RVUsuarioNrPublicacion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "DSUsuarioNrPublicacion"
         ReportDataSource1.Value = Me.DTUsuarioNrPublicacionBindingSource
         Me.RVUsuarioNrPublicacion.LocalReport.DataSources.Add(ReportDataSource1)
@@ -111,13 +114,15 @@ Partial Class frm_ReporteUsuarioNrPublicacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(659, 363)
+        Me.ClientSize = New System.Drawing.Size(658, 355)
         Me.Controls.Add(Me.RVUsuarioNrPublicacion)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mtxt_fechaDesde)
         Me.Controls.Add(Me.btn_generarReporte)
+        Me.MaximumSize = New System.Drawing.Size(800, 394)
+        Me.MinimumSize = New System.Drawing.Size(674, 394)
         Me.Name = "frm_ReporteUsuarioNrPublicacion"
         Me.Text = "Reporte de la cantidad de reportes por usuario"
         CType(Me.DTUsuarioNrPublicacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
