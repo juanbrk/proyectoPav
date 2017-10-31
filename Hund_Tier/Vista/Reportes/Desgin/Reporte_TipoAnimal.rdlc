@@ -169,7 +169,7 @@
         </TablixRowHierarchy>
         <DataSetName>TablaTipoAnimal</DataSetName>
         <Top>0.17639cm</Top>
-        <Left>4.23016cm</Left>
+        <Left>2.96016cm</Left>
         <Height>1.2cm</Height>
         <Width>6.74624cm</Width>
         <Style>
@@ -423,10 +423,10 @@
           </Style>
         </ChartNoDataMessage>
         <DataSetName>TablaTipoAnimal</DataSetName>
-        <Top>2.43099cm</Top>
-        <Left>0.57041cm</Left>
-        <Height>5cm</Height>
-        <Width>7.5cm</Width>
+        <Top>1.47849cm</Top>
+        <Left>0.3175cm</Left>
+        <Height>4.6825cm</Height>
+        <Width>5.60979cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -701,8 +701,8 @@
           </Style>
         </ChartNoDataMessage>
         <DataSetName>TablaTipoAnimal</DataSetName>
-        <Top>2.43099cm</Top>
-        <Left>9.28749cm</Left>
+        <Top>1.47849cm</Top>
+        <Left>6.03404cm</Left>
         <Height>5cm</Height>
         <Width>7.5cm</Width>
         <ZIndex>2</ZIndex>
@@ -716,13 +716,13 @@
         </Style>
       </Chart>
     </ReportItems>
-    <Height>3.281in</Height>
+    <Height>2.60392in</Height>
     <Style />
   </Body>
-  <Width>6.72917in</Width>
+  <Width>5.39086in</Width>
   <Page>
     <PageHeader>
-      <Height>3.51578cm</Height>
+      <Height>2.88078cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -730,7 +730,7 @@
           <Source>Embedded</Source>
           <Value>TipoAnimal1</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>11.07341cm</Left>
+          <Left>8.53341cm</Left>
           <Height>2.8575cm</Height>
           <Width>5.00063cm</Width>
           <Style>
@@ -748,7 +748,7 @@
                 <TextRun>
                   <Value>Reporte de la cantidad de perros y gatos que estan buscando</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -760,9 +760,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.60509cm</Top>
-          <Left>1.37266cm</Left>
+          <Left>0.57041cm</Left>
           <Height>1.36729cm</Height>
-          <Width>10.72854cm</Width>
+          <Width>8.82354cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -804,7 +804,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>2.14877cm</Top>
-          <Left>1.8451cm</Left>
           <Height>0.62646cm</Height>
           <Width>10.00442cm</Width>
           <ZIndex>2</ZIndex>
@@ -860,7 +859,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>0.17639cm</Top>
-          <Left>9.10166cm</Left>
+          <Left>5.60916cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>

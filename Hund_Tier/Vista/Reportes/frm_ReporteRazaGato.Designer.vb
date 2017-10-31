@@ -54,7 +54,7 @@ Partial Class frm_ReporteRazaGato
         Me.RVRazaGato.LocalReport.ReportEmbeddedResource = "Hund_Tier.Reporte_RazaGato.rdlc"
         Me.RVRazaGato.Location = New System.Drawing.Point(12, 60)
         Me.RVRazaGato.Name = "RVRazaGato"
-        Me.RVRazaGato.Size = New System.Drawing.Size(569, 301)
+        Me.RVRazaGato.Size = New System.Drawing.Size(636, 301)
         Me.RVRazaGato.TabIndex = 0
         '
         'Label2
@@ -111,7 +111,7 @@ Partial Class frm_ReporteRazaGato
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(593, 373)
+        Me.ClientSize = New System.Drawing.Size(660, 373)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.mtxt_FechaHasta)
         Me.Controls.Add(Me.Label1)

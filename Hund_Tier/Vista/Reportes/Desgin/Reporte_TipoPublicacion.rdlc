@@ -168,8 +168,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DSTipoPublicacion</DataSetName>
-        <Top>0.49389cm</Top>
-        <Left>0.76571cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>0.3175cm</Left>
         <Height>1.2cm</Height>
         <Width>5.82021cm</Width>
         <Style>
@@ -442,10 +442,10 @@
           </Style>
         </ChartNoDataMessage>
         <DataSetName>DSTipoPublicacion</DataSetName>
-        <Top>1.09389cm</Top>
-        <Left>8.22537cm</Left>
-        <Height>3.67715cm</Height>
-        <Width>7.5cm</Width>
+        <Top>0.17639cm</Top>
+        <Left>6.32037cm</Left>
+        <Height>4.27715cm</Height>
+        <Width>6.91038cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -457,16 +457,29 @@
         </Style>
       </Chart>
     </ReportItems>
-    <Height>2.02243in</Height>
+    <Height>1.79326in</Height>
     <Style />
   </Body>
-  <Width>6.87562in</Width>
+  <Width>5.26104in</Width>
   <Page>
     <PageHeader>
       <Height>3.08846cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>TipoAnimal</Value>
+          <Sizing>FitProportional</Sizing>
+          <Left>7.992cm</Left>
+          <Height>2.76668cm</Height>
+          <Width>5.02708cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
         <Textbox Name="Textbox1">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -476,7 +489,7 @@
                 <TextRun>
                   <Value>Reporte de la cantidad de los tipos de pubilcaciones</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -487,9 +500,10 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.32178cm</Top>
-          <Left>2.62615cm</Left>
+          <Left>0.72115cm</Left>
           <Height>1.36729cm</Height>
-          <Width>10.72854cm</Width>
+          <Width>7.47417cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -530,10 +544,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>1.91354cm</Top>
-          <Left>3.04113cm</Left>
           <Height>0.62646cm</Height>
-          <Width>10.00442cm</Width>
-          <ZIndex>1</ZIndex>
+          <Width>9.29005cm</Width>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -544,21 +557,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Image Name="Image1">
-          <Source>Embedded</Source>
-          <Value>TipoAnimal</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.32178cm</Top>
-          <Left>12.437cm</Left>
-          <Height>2.76668cm</Height>
-          <Width>5.02708cm</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
       </ReportItems>
       <Style>
         <Border>
@@ -601,7 +599,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>0.14111cm</Top>
-          <Left>9.77826cm</Left>
+          <Left>5.33326cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>

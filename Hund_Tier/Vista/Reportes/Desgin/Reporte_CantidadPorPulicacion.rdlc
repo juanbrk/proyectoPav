@@ -236,7 +236,6 @@
         </TablixRowHierarchy>
         <DataSetName>DSCantidadPorPublicacion</DataSetName>
         <Top>0.17639cm</Top>
-        <Left>1.17372cm</Left>
         <Height>1.2cm</Height>
         <Width>8.135cm</Width>
         <Style>
@@ -518,8 +517,8 @@
           </Style>
         </ChartNoDataMessage>
         <DataSetName>DSCantidadPorPublicacion</DataSetName>
-        <Top>0.77639cm</Top>
-        <Left>9.97288cm</Left>
+        <Top>0.03528cm</Top>
+        <Left>8.31139cm</Left>
         <Height>5.64614cm</Height>
         <Width>8.57974cm</Width>
         <ZIndex>1</ZIndex>
@@ -533,16 +532,29 @@
         </Style>
       </Chart>
     </ReportItems>
-    <Height>2.67247in</Height>
+    <Height>2.23678in</Height>
     <Style />
   </Body>
-  <Width>7.64311in</Width>
+  <Width>6.65005in</Width>
   <Page>
     <PageHeader>
-      <Height>3.49111cm</Height>
+      <Height>3.52685cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
+        <Image Name="Image2">
+          <Source>Embedded</Source>
+          <Value>TipoAnimal</Value>
+          <Sizing>FitProportional</Sizing>
+          <Left>9.73628cm</Left>
+          <Height>3.45629cm</Height>
+          <Width>6.45305cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
         <Textbox Name="Textbox2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -570,10 +582,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.5084cm</Top>
-          <Left>1.79561cm</Left>
+          <Top>1.54414cm</Top>
+          <Left>0.53872cm</Left>
           <Height>0.62646cm</Height>
           <Width>10.00442cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -593,7 +606,7 @@
                 <TextRun>
                   <Value>Reporte de la cantidad de gatos y peros y su tipo de Publicaciones</Value>
                   <Style>
-                    <FontSize>16pt</FontSize>
+                    <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -604,10 +617,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Left>1.43173cm</Left>
+          <Top>0.03574cm</Top>
           <Height>1.36729cm</Height>
           <Width>10.72854cm</Width>
-          <ZIndex>1</ZIndex>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -618,20 +631,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Image Name="Image2">
-          <Source>Embedded</Source>
-          <Value>TipoAnimal</Value>
-          <Sizing>FitProportional</Sizing>
-          <Left>11.80003cm</Left>
-          <Height>3.45629cm</Height>
-          <Width>6.45305cm</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
       </ReportItems>
       <Style>
         <Border>
@@ -673,8 +672,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>10.86679cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>9.2053cm</Left>
           <Height>0.6cm</Height>
           <Width>7.68583cm</Width>
           <Style>
