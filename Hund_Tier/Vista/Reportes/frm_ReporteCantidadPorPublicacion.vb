@@ -17,7 +17,7 @@ Public Class frm_ReporteCantidadPorPublicacion
             Dim reformattedHasta As String = fechaHasta.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
             RVCantidadPorPublicacion.LocalReport.DataSources.Clear()
             RVCantidadPorPublicacion.LocalReport.SetParameters({New ReportParameter("pFechaDesde", mtxt_fechaDesde.Text), New ReportParameter("pFechaHasta", mtxt_FechaHasta.Text)})
-            RVCantidadPorPublicacion.LocalReport.DataSources.Add(New ReportDataSource("DSCantidadPorPublicacion", oPublicacionService.generarReporteTipoAnimal(reformatedDesde, reformattedHasta)))
+            RVCantidadPorPublicacion.LocalReport.DataSources.Add(New ReportDataSource("DSCantidadPorPublicacion", oPublicacionService.generarReporteAnimalXTipoPublicacion(reformatedDesde, reformattedHasta)))
             RVCantidadPorPublicacion.RefreshReport()
         Else
             MsgBox("Periodo incorrecto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")

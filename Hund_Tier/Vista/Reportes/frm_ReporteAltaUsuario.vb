@@ -11,7 +11,7 @@ Public Class frm_ReporteAltaUsuario
         Me.rpt_animales.RefreshReport()
     End Sub
 
-    Private Sub btn_generarReporte_Click(sender As Object, e As EventArgs)
+    Private Sub btn_generarReporte_Click_1(sender As Object, e As EventArgs) Handles btn_generarReporte.Click
         Dim oUsuariosService As New UsuariosService
         If IsDate(mtxt_fechaDesde.Text) And IsDate((mtxt_FechaHasta.Text)) Then
             Dim fechaDesde As DateTime = DateTime.ParseExact(mtxt_fechaDesde.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture)

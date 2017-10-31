@@ -11,7 +11,8 @@
     End Sub
 
     Private Sub btn_reporteTipoPublicacion_Click(sender As Object, e As EventArgs) Handles btn_reporteTipoPublicacion.Click
-
+        Dim formReporteTipoPublicacion As New frm_ReporteTipoPublicacion
+        formReporteTipoPublicacion.ShowDialog()
     End Sub
 
     Private Sub btn_reporteMayorRazasPerro_Click(sender As Object, e As EventArgs) Handles btn_reporteMayorRazasPerro.Click
@@ -32,5 +33,15 @@
         If d = DialogResult.OK Then
             Me.Close()
         End If
+    End Sub
+
+    Private Sub btn_reporteMayorUsuarioPublicaciones_Click(sender As Object, e As EventArgs) Handles btn_reporteMayorUsuarioPublicaciones.Click
+        Dim formReporteUsuarioXPublicacion As New frm_ReporteUsuarioNrPublicacion
+        formReporteUsuarioXPublicacion.ShowDialog()
+    End Sub
+
+    Private Sub btn_reporteAnimalXTipoPublicacion_Click(sender As Object, e As EventArgs) Handles btn_reporteAnimalXTipoPublicacion.Click
+        Dim formAnimalXTipoPublicacion As New frm_ReporteCantidadPorPublicacion
+        formAnimalXTipoPublicacion.ShowDialog()
     End Sub
 End Class

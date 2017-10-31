@@ -77,3 +77,6 @@ C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.vbpr
 C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\RdlCompile.cache
 C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\RdlCompile.compiled
 C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.frm_ReporteAltaUsuario.resources
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.frm_ReporteCantidadPorPublicacion.resources
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.frm_ReporteTipoPublicacion.resources
+C:\Users\Juan\Documents\UTN\UTN 2017\PAV1\HT1\Hund_Tier\obj\Debug\Hund_Tier.frm_ReporteUsuarioNrPublicacion.resources

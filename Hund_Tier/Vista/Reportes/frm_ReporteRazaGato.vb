@@ -9,7 +9,7 @@ Public Class frm_ReporteRazaGato
     End Sub
 
     Private Sub btn_generarReporte_Click(sender As Object, e As EventArgs) Handles btn_generarReporte.Click
-        Dim oUsuariosService As New UsuariosService
+        Dim oPublicacionService As New PublicacionService
         If IsDate(mtxt_fechaDesde.Text) And IsDate((mtxt_FechaHasta.Text)) Then
             Dim fechaDesde As DateTime = DateTime.ParseExact(mtxt_fechaDesde.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture)
             Dim reformatedDesde As String = fechaDesde.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
@@ -17,7 +17,7 @@ Public Class frm_ReporteRazaGato
             Dim reformattedHasta As String = fechaHasta.ToString("yyyyMMdd", CultureInfo.InvariantCulture)
             RVRazaGato.LocalReport.SetParameters({New ReportParameter("pFechaDesde", mtxt_fechaDesde.Text), New ReportParameter("pFechaHasta", mtxt_FechaHasta.Text)})
             RVRazaGato.LocalReport.DataSources.Clear()
-            RVRazaGato.LocalReport.DataSources.Add(New ReportDataSource("TablaRazaGato", oUsuariosService.generarReporteAltaUsuario(reformatedDesde, reformattedHasta)))
+            RVRazaGato.LocalReport.DataSources.Add(New ReportDataSource("TablaRazaGato", oPublicacionService.generarReporteRazasGato(reformatedDesde, reformattedHasta)))
             RVRazaGato.RefreshReport()
         Else
             MsgBox("Periodo incorrecto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")

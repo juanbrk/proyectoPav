@@ -52,6 +52,26 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
+<member name="T:Hund_Tier.DSCantidadPorPublicacion">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSCantidadPorPublicacion.DTCantidadPorPublicacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSCantidadPorPublicacion.DTCantidadPorPublicacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSCantidadPorPublicacion.DTCantidadPorPublicacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Hund_Tier.DSRazaGato">
 <summary>
 Represents a strongly typed in-memory cache of data.
@@ -108,6 +128,46 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Hund_Tier.DSTipoAnimal.DTTipoAnimalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Hund_Tier.DSTipoPublicacion">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSTipoPublicacion.DTTipoPublicacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSTipoPublicacion.DTTipoPublicacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSTipoPublicacion.DTTipoPublicacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Hund_Tier.DSUsuarioNrPublicacion">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSUsuarioNrPublicacion.DTUsuarioNrPublicacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSUsuarioNrPublicacion.DTUsuarioNrPublicacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Hund_Tier.DSUsuarioNrPublicacion.DTUsuarioNrPublicacionRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
