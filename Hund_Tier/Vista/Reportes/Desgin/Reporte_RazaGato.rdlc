@@ -213,6 +213,7 @@
                   </ChartDataPointValues>
                   <ChartDataLabel>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <Color>White</Color>
                     </Style>
                     <Label>#PERCENT</Label>

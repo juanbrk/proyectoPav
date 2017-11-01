@@ -471,7 +471,9 @@
                     <Y>=Max(Fields!CantidadAnimal.Value)</Y>
                   </ChartDataPointValues>
                   <ChartDataLabel>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                     <Label>#PERCENT</Label>
                     <Visible>true</Visible>
                   </ChartDataLabel>
